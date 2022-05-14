@@ -13,12 +13,12 @@ class Machine(Model):
     facts: MachineFacts = MachineFacts()
 
     def __hash__(self) -> int:
-        return hash(self.ip)
+        return hash(self.ssh.username + str(self.ip))
 
     def __eq__(self, other: Any) -> bool:
         if not isinstance(other, Machine):
             return False
-        return self.ip == other.ip
+        return hash(self) == hash(other)
 
 
 class Fleet(Model):

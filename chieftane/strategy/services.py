@@ -1,12 +1,9 @@
 """
 Basic use cases implemented:
-- gather intel from host
-- gather intel from fleet
+- gather intel on host
 - execute strategy on host
 - execute strategy on fleet
 """
-
-from typing import Tuple
 
 from loguru import logger
 
@@ -18,25 +15,15 @@ from chieftane.strategy.orders.models import Order, OrderOutcome
 from chieftane.strategy.orders.recon.models import Recon
 
 
-def update_fleet_facts(comm: SSHCommunicator, orders: list[Recon], fleet: Fleet) -> Fleet:
-    updated_fleet = fleet.copy()
-    for host in updated_fleet.machines:
-        update_host_facts(comm, orders, host)
-
-    return updated_fleet
-
-
-def update_host_facts(comm: SSHCommunicator, orders: list[Recon], host: Machine) -> Machine:
+def get_host_facts(comm: SSHCommunicator, orders: list[Recon], host: Machine) -> MachineFacts:
     facts = MachineFacts()
-    updated_host = host.copy()
     for order in orders:
-        execute_order(comm, order, updated_host)
+        execute_order(comm, order, host)
         if not order.intel:
             continue
         facts.append(order.intel)
 
-    updated_host.facts.update(facts)
-    return updated_host
+    return facts
 
 
 def handle_failed_order(order: Order, host: Machine):
@@ -79,16 +66,19 @@ def execute_order(comm: SSHCommunicator, order: Order, host: Machine, hide_outpu
 
 def execute_strategy_on_host(
     comm: SSHCommunicator, strategy: Strategy, host: Machine, recon: bool = True
-):
+) -> StrategyOutcome:
     """Execute strategy on host"""
+    outcome = StrategyOutcome()
     if recon:
-        host = update_host_facts(comm, strategy.recon, host)
+        outcome.facts.update(get_host_facts(comm, strategy.recon, host))
 
     for order in strategy.orders:
         if isinstance(order, Recon) and not recon:
             continue
 
         execute_order(comm, order, host)
+        outcome.orders.append(order)
+
         if order.failed:
             break
 
@@ -97,18 +87,18 @@ def execute_strategy_on_host(
         host.ssh.username,
         host.ip,
         host.ssh.port,
-        len(strategy.outcome.success),
-        len(strategy.outcome.error),
+        len(strategy.successful_orders),
+        len(strategy.failed_orders),
     )
 
-    return strategy.outcome
+    return outcome
 
 
 def execute_strategy_on_fleet(
     comm: SSHCommunicator, strategy: Strategy, fleet: Fleet, recon: bool = True
-) -> Tuple[StrategyOutcome, Fleet]:
+) -> dict[Machine, StrategyOutcome]:
     """Execute strategy on fleet"""
     for host in fleet.machines:
-        execute_strategy_on_host(comm, strategy, host, recon)
+        strategy.outcome[host] = execute_strategy_on_host(comm, strategy, host, recon)
 
-    return strategy.outcome, fleet
+    return strategy.outcome
