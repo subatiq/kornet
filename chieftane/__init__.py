@@ -1,4 +1,4 @@
-from typing import Any
+from typing import Any, Tuple
 
 from chieftane.fleet.models import Fleet
 from chieftane.fleet.raw.hosts_parser import parse_fleet_object
@@ -16,5 +16,5 @@ def prepare_fleet(fleet_raw: dict[str, Any], group: str) -> Fleet:
     return parse_fleet_object(fleet_raw, group)
 
 
-def execute_strategy(strategy: Strategy, fleet: Fleet) -> StrategyOutcome:
+def execute_strategy(strategy: Strategy, fleet: Fleet) -> Tuple[StrategyOutcome, Fleet]:
     return execute_strategy_on_fleet(ParamikoSSHCommunicator(), strategy, fleet)

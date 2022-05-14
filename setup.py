@@ -13,7 +13,7 @@ setup(
     author="Vladimir Semenov",
     author_email="subatiq@gmail.com",
     url="https://github.com/subatiq/chieftane",
-    download_url="https://github.com/subatiq/chieftane/archive/refs/tags/pre-0.0.3.tar.gz",
+    download_url="https://github.com/subatiq/chieftane/archive/refs/tags/pre-0.0.4.tar.gz",
     keywords=["SSH", "AUTOMATION", "ORCHESTRATION"],
     install_requires=[
         "paramiko",

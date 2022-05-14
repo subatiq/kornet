@@ -6,6 +6,8 @@ Basic use cases implemented:
 - execute strategy on fleet
 """
 
+from typing import Tuple
+
 from loguru import logger
 
 from chieftane.fleet.models import Fleet, Machine
@@ -104,9 +106,9 @@ def execute_strategy_on_host(
 
 def execute_strategy_on_fleet(
     comm: SSHCommunicator, strategy: Strategy, fleet: Fleet, recon: bool = True
-) -> StrategyOutcome:
+) -> Tuple[StrategyOutcome, Fleet]:
     """Execute strategy on fleet"""
     for host in fleet.machines:
         execute_strategy_on_host(comm, strategy, host, recon)
 
-    return strategy.outcome
+    return strategy.outcome, fleet
