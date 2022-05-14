@@ -41,4 +41,12 @@ Strategy is a set of orders to execute via SSH. The format is pretty simple:
 
 ## Running strategy
 
-TODO: Instruction here after finishing CLI
+```
+python3 -m chieftane <strategy_file.yml> <fleet_file.yml> <group>
+```
+
+**strategy file** - yaml strategy file described above
+
+**fleet file** - yaml fleet file described above
+
+**group** - group to run the strategy on
