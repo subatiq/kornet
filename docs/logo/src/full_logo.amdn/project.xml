@@ -1,0 +1,528 @@
+<?xml version="1.0" ?>
+<Document serializeVersion="15">
+    <InterfaceSettings canvasscale="0.342254" canvasrect="-971.548,-397.413,2241.03,1963.45" canvasCenter="148.965,584.314" />
+    <Drawing snapgrid="0" gridback="1" sheetmovecontent="1" measurementunits="5" guidesvisible="1" guideslocked="0" scalestrokeandeffects="0" issheetdependentrulers="1" marginsenabled="0" margins="0,0,0,0" bleedsenabled="0" bleeds="0,0,0,0" colorformat="0" effectsPpi="150">
+        <Sheets count="1" activesheet="0">
+            <_0 name="Sheet 1" bound="0,0,800,800" enabled="1" />
+        </Sheets>
+        <swatches>
+            <colorpalette count="22">
+                <_0 color="1,0.113725,0.145098,1" />
+                <_1 color="1,0.576471,0.117647,1" />
+                <_2 color="0.992157,0.752941,0.321569,1" />
+                <_3 color="0.988235,0.933333,0.133333,1" />
+                <_4 color="0.54902,0.776471,0.247059,1" />
+                <_5 color="0,0.407843,0.215686,1" />
+                <_6 color="0.133333,0.709804,0.45098,1" />
+                <_7 color="0,0.654902,0.619608,1" />
+                <_8 color="0.243137,0.662745,0.960784,1" />
+                <_9 color="0,0.443137,0.733333,1" />
+                <_10 color="0.219608,0.184314,0.576471,1" />
+                <_11 color="0.4,0.176471,0.568627,1" />
+                <_12 color="0.933333,0.145098,0.482353,1" />
+                <_13 color="1,0.482353,0.67451,1" />
+                <_14 color="0.780392,0.698039,0.6,1" />
+                <_15 color="0.776471,0.615686,0.427451,1" />
+                <_16 color="0.54902,0.384314,0.223529,1" />
+                <_17 color="0.376471,0.219608,0.0745098,1" />
+                <_18 color="0,0,0,1" />
+                <_19 color="0.313726,0.313726,0.313726,1" />
+                <_20 color="0.623529,0.623529,0.623529,1" />
+                <_21 color="1,1,1,1" />
+            </colorpalette>
+            <gradientswatches count="22">
+                <_0>
+                    <gradientfiller startpoint="0.5,0" endpoint="0.5,1" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="1,0.87451,0.25098,1" colorlocation="0" />
+                            <_1 color="1,0.431373,0.294118,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_0>
+                <_1>
+                    <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="0.329412,0.819608,0.411765,1" colorlocation="0" />
+                            <_1 color="0.686275,0.960784,0.478431,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_1>
+                <_2>
+                    <gradientfiller startpoint="1,0" endpoint="0,1" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="0.27451,0.933333,0.666667,1" colorlocation="0" />
+                            <_1 color="0.172549,0.74902,0.780392,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_2>
+                <_3>
+                    <gradientfiller startpoint="0.5,0" endpoint="0.5,1" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="0.0823529,0.929412,0.929412,1" colorlocation="0" />
+                            <_1 color="0.00784314,0.611765,0.960784,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_3>
+                <_4>
+                    <gradientfiller startpoint="1,0.5" endpoint="0,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="0.34902,0.760784,1,1" colorlocation="0" />
+                            <_1 color="0.0705882,0.439216,0.890196,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_4>
+                <_5>
+                    <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="0.329412,0.588235,1,1" colorlocation="0" />
+                            <_1 color="0.529412,0.223529,0.898039,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_5>
+                <_6>
+                    <gradientfiller startpoint="0.5,0" endpoint="0.5,1" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="0.729412,0.32549,0.439216,1" colorlocation="0" />
+                            <_1 color="0.952941,0.882353,0.843137,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_6>
+                <_7>
+                    <gradientfiller startpoint="0.5,0" endpoint="0.5,1" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="1,0.686275,0.741176,1" colorlocation="0" />
+                            <_1 color="1,0.764706,0.627451,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_7>
+                <_8>
+                    <gradientfiller startpoint="0.5,0" endpoint="0.5,1" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="0.964706,0.792157,0.92549,1" colorlocation="0" />
+                            <_1 color="0.85098,0.227451,0.803922,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_8>
+                <_9>
+                    <gradientfiller startpoint="1,0" endpoint="0,1" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="1,0.388235,0.870588,1" colorlocation="0" />
+                            <_1 color="0.694118,0.133333,0.898039,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_9>
+                <_10>
+                    <gradientfiller startpoint="0.5,1" endpoint="0.5,0" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="1,0.486275,0.431373,1" colorlocation="0" />
+                            <_1 color="0.960784,0.192157,0.498039,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_10>
+                <_11>
+                    <gradientfiller startpoint="1,0" endpoint="0,1" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="0.941176,0.372549,0.396078,1" colorlocation="0" />
+                            <_1 color="0.603922,0.0823529,0.462745,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_11>
+                <_12>
+                    <gradientfiller startpoint="0.5,1" endpoint="0.5,0" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="0.94902,0.305882,0.364706,1" colorlocation="0" />
+                            <_1 color="0.647059,0.0352941,0.121569,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_12>
+                <_13>
+                    <gradientfiller startpoint="0.5,0" endpoint="0.5,1" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="0.890196,0.792157,0.490196,1" colorlocation="0" />
+                            <_1 color="0.329412,0.0745098,0.839216,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_13>
+                <_14>
+                    <gradientfiller startpoint="0.5,0" endpoint="0.5,1" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="1,1,1,1" colorlocation="0" />
+                            <_1 color="0.764706,0.764706,0.764706,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_14>
+                <_15>
+                    <gradientfiller startpoint="0.5,0" endpoint="0.5,1" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="0.74902,0.74902,0.74902,1" colorlocation="0" />
+                            <_1 color="0.454902,0.454902,0.454902,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_15>
+                <_16>
+                    <gradientfiller startpoint="0.5,0" endpoint="0.5,1" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="0.290196,0.290196,0.290196,1" colorlocation="0" />
+                            <_1 color="0,0,0,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_16>
+                <_17>
+                    <gradientfiller startpoint="0.5,0.5" endpoint="1.2,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="1">
+                        <gradient count="2">
+                            <_0 color="0.992157,0.823529,0.0980392,1" colorlocation="0" />
+                            <_1 color="0.94902,0.427451,0.0588235,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_17>
+                <_18>
+                    <gradientfiller startpoint="0.5,0.5" endpoint="1.2,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="1">
+                        <gradient count="2">
+                            <_0 color="0.313726,0.87451,0.901961,1" colorlocation="0" />
+                            <_1 color="0.152941,0.309804,0.776471,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_18>
+                <_19>
+                    <gradientfiller startpoint="0.5,0.5" endpoint="0.5,1" middlepoint="0,0" gradientroundness="1" gradientstyle="1">
+                        <gradient count="2">
+                            <_0 color="0.462745,0.929412,0.643137,1" colorlocation="0" />
+                            <_1 color="0.227451,0.6,0.666667,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_19>
+                <_20>
+                    <gradientfiller startpoint="0.5,0" endpoint="0.5,1" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="1,1,1,1" colorlocation="0" />
+                            <_1 color="1,1,1,0" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_20>
+                <_21>
+                    <gradientfiller startpoint="0.5,0.5" endpoint="0.5,1.5" middlepoint="0,0" gradientroundness="1" gradientstyle="1">
+                        <gradient count="2">
+                            <_0 color="0,0,0,0" colorlocation="0" />
+                            <_1 color="0,0,0,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_21>
+            </gradientswatches>
+            <ellipticbrushwatches count="6">
+                <_0 brush="3.14159,0.2" />
+                <_1 brush="1.5708,0.3" />
+                <_2 brush="1.0472,0.4" />
+                <_3 brush="0.785398,0.8" />
+                <_4 brush="1.5708,0.6" />
+                <_5 brush="0.523599,0.2" />
+            </ellipticbrushwatches>
+            <strokeprofiles count="5">
+                <_0 />
+                <_1>
+                    <strokeprofile spplaces="0,1" sprightradius="1,0" spleftradius="1,0" />
+                </_1>
+                <_2>
+                    <strokeprofile spplaces="0,0.5,1" sprightradius="1,0,1" spleftradius="1,0,1" />
+                </_2>
+                <_3>
+                    <strokeprofile spplaces="0,0.5,1" sprightradius="0,1,0" spleftradius="0,1,0" />
+                </_3>
+                <_4>
+                    <strokeprofile spplaces="0,0.2,0.8,1" sprightradius="0,1,1,0" spleftradius="0,1,1,0" />
+                </_4>
+            </strokeprofiles>
+        </swatches>
+        <Grid size="100,100" subdivisionx="2" subdivisiony="2" color="0.5,0.5,0.5,0.5" visible="0" />
+        <Objects count="4" activelayer="3">
+            <_0 class="Layer" GUID="{beb50005-151f-0641-8f47-7a8b66c87573}" name="Layer 1" visible="0" printable="1" locked="0" opacity="1" blendmode="0" unfolded="1" selectioncolor="0.19,0.55,1,1">
+                <Objects count="1">
+                    <_0 class="PathShape" GUID="{c90b841d-075b-4a48-8c89-f4eb23947009}" name="Shape 14824" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="0" ctm="(1135.033530340512,0, 0,552.679733208432, 177.82907269641,97.29022216796881)" pivotPoint="0.5,0.5" d="M 0 5.55111512e-17 C 0 5.55111512e-17 1 5.55111512e-17 1 5.55111512e-17 C 1 5.55111512e-17 1 1 1 1 C 1 1 0 1 0 1 C 0 1 0 5.55111512e-17 0 5.55111512e-17 Z " autoclosed="0" handlesArray="F1 M 0 5.55111512e-17 L 0 5.55111512e-17 ">
+                        <drawers count="2">
+                            <_0 class="0" name="Stroke" enabled="0" opacity="1" blendmode="0" fillmode="0" stroke="1" salign="0" smode="0">
+                                <solidfiller fill="0,0,0,1" />
+                                <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                    <gradient count="2">
+                                        <_0 color="0,0,0,1" colorlocation="0" />
+                                        <_1 color="1,0,0,1" colorlocation="1" />
+                                    </gradient>
+                                </gradientfiller>
+                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                                <style linecapstyle="0" linejoinstyle="0" flatness="0.1" miterlimit="10" linedashphase="0" />
+                                <arrows startarrowstyle="0" startarrowscale="1" endarrowstyle="0" endarrowscale="1" />
+                                <brush angle="0.785398" roundness="0.333333" />
+                            </_0>
+                            <_1 class="1" name="Fill" enabled="1" opacity="1" blendmode="0" fillmode="2" winding="0">
+                                <solidfiller fill="0.666667,0.666667,0.666667,1" />
+                                <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                    <gradient count="2">
+                                        <_0 color="0,0,0,1" colorlocation="0" />
+                                        <_1 color="1,0,0,1" colorlocation="1" />
+                                    </gradient>
+                                </gradientfiller>
+                                <imagefiller scale="1,1" angle="0" fittype="1" offset="0,0" shear="0" imagename="istockphoto-830999014-612x612_{7d2779f2-7282-5b4f-934d-12ac65aed1a2}.jpg" />
+                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                            </_1>
+                        </drawers>
+                    </_0>
+                </Objects>
+            </_0>
+            <_1 class="Layer" GUID="{8e73e0b0-08e1-8641-95b8-2bb6ed06eb68}" name="Layer 2" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="1" selectioncolor="1,0.5,0,1">
+                <Objects count="8">
+                    <_0 class="PathShape" GUID="{e7b2d045-551d-2e4f-ab80-b344fd2bcf48}" name="Path" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="0" ctm="(800.0001965629313,0, 0,799.999984155124, 0.4582251702189046,2.234678441606515e-06)" pivotPoint="0.5,0.5" d="M 0.49999994 0 C 0.77614224 0 1 0.223857611 1 0.49999994 C 1 0.776142299 0.77614224 1 0.49999994 1 C 0.223857537 1 0 0.776142299 0 0.49999994 C 0 0.223857611 0.223857537 0 0.49999994 0 Z " autoclosed="0" handlesArray="F1 M 0.49999994 0 L 0.49999994 0 ">
+                        <drawers count="2">
+                            <_0 class="0" name="Stroke" enabled="0" opacity="1" blendmode="0" fillmode="0" stroke="5" salign="0" smode="0">
+                                <solidfiller fill="0,0,0,1" />
+                                <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                    <gradient count="2">
+                                        <_0 color="0,0,0,1" colorlocation="0" />
+                                        <_1 color="1,0,0,1" colorlocation="1" />
+                                    </gradient>
+                                </gradientfiller>
+                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                                <style linecapstyle="1" linejoinstyle="1" flatness="0.1" miterlimit="10" linedashphase="0" />
+                                <arrows startarrowstyle="0" startarrowscale="1" endarrowstyle="0" endarrowscale="1" />
+                                <brush angle="0.785398" roundness="0.333333" />
+                            </_0>
+                            <_1 class="1" name="Fill" enabled="1" opacity="1" blendmode="0" fillmode="0" winding="0">
+                                <solidfiller fill="0.111669,0,0.358243,1" />
+                                <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                    <gradient count="2">
+                                        <_0 color="0,0,0,1" colorlocation="0" />
+                                        <_1 color="1,0,0,1" colorlocation="1" />
+                                    </gradient>
+                                </gradientfiller>
+                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                            </_1>
+                        </drawers>
+                    </_0>
+                    <_1 class="PathShape" GUID="{ec1bb289-fa55-314f-89c8-4f4de37b8f56}" name="Shape 14825 Copy" visible="0" printable="1" locked="0" opacity="1" blendmode="0" unfolded="0" ctm="(105.9179234625336,0, 0,105.9179051805576, 399.0000000000006,425.7797876905362)" pivotPoint="0.5,0.5" d="M 0.5 0.828992426 C 0.5 0.828992426 0.328992486 1 0.328992486 1 C 0.328992486 1 2.22044605e-16 0.671007454 2.22044605e-16 0.671007454 C 2.22044605e-16 0.671007454 0.171007514 0.499999911 0.171007514 0.499999911 C 0.171007514 0.499999911 1.71697394e-07 0.328992546 1.71697394e-07 0.328992546 C 1.71697394e-07 0.328992546 0.328992665 0 0.328992665 0 C 0.328992665 0 0.5 0.17100738 0.5 0.17100738 C 0.5 0.17100738 0.671007156 1.71697437e-07 0.671007156 1.71697437e-07 C 0.671007156 1.71697437e-07 0.999999642 0.328992695 0.999999642 0.328992695 C 0.999999642 0.328992695 0.828992486 0.499999911 0.828992486 0.499999911 C 0.828992486 0.499999911 1 0.671007454 1 0.671007454 C 1 0.671007454 0.671007335 1 0.671007335 1 C 0.671007335 1 0.5 0.828992426 0.5 0.828992426 Z " autoclosed="0" handlesArray="F1 M 0.5 0.828992426 L 0.5 0.828992426 ">
+                        <drawers count="2">
+                            <_0 class="0" name="Stroke" enabled="0" opacity="1" blendmode="0" fillmode="0" stroke="5" salign="0" smode="0">
+                                <solidfiller fill="0.678431,0.308611,1,1" />
+                                <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                    <gradient count="2">
+                                        <_0 color="0,0,0,1" colorlocation="0" />
+                                        <_1 color="1,0,0,1" colorlocation="1" />
+                                    </gradient>
+                                </gradientfiller>
+                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                                <style linecapstyle="0" linejoinstyle="0" flatness="0.1" miterlimit="10" linedashphase="0" />
+                                <arrows startarrowstyle="0" startarrowscale="1" endarrowstyle="0" endarrowscale="1" />
+                                <brush angle="0.785398" roundness="0.333333" />
+                            </_0>
+                            <_1 class="1" name="Fill" enabled="1" opacity="1" blendmode="0" fillmode="0" winding="0">
+                                <solidfiller fill="0.671527,0.312044,0.999237,1" />
+                                <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                    <gradient count="2">
+                                        <_0 color="0,0,0,1" colorlocation="0" />
+                                        <_1 color="1,0,0,1" colorlocation="1" />
+                                    </gradient>
+                                </gradientfiller>
+                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                            </_1>
+                        </drawers>
+                    </_1>
+                    <_2 class="PathShape" GUID="{78f4f596-ea65-e241-8354-0cf62f16a7db}" name="Shape 14825 Copy" visible="0" printable="1" locked="0" opacity="1" blendmode="0" unfolded="0" ctm="(105.9179234625336,0, 0,105.9179051805576, 388.5083312988285,425.7798182081143)" pivotPoint="0.5,0.5" d="M 0.5 0.828992426 C 0.5 0.828992426 0.328992486 1 0.328992486 1 C 0.328992486 1 2.22044605e-16 0.671007454 2.22044605e-16 0.671007454 C 2.22044605e-16 0.671007454 0.171007514 0.499999911 0.171007514 0.499999911 C 0.171007514 0.499999911 1.71697394e-07 0.328992546 1.71697394e-07 0.328992546 C 1.71697394e-07 0.328992546 0.328992665 0 0.328992665 0 C 0.328992665 0 0.5 0.17100738 0.5 0.17100738 C 0.5 0.17100738 0.671007156 1.71697437e-07 0.671007156 1.71697437e-07 C 0.671007156 1.71697437e-07 0.999999642 0.328992695 0.999999642 0.328992695 C 0.999999642 0.328992695 0.828992486 0.499999911 0.828992486 0.499999911 C 0.828992486 0.499999911 1 0.671007454 1 0.671007454 C 1 0.671007454 0.671007335 1 0.671007335 1 C 0.671007335 1 0.5 0.828992426 0.5 0.828992426 Z " autoclosed="0" handlesArray="F1 M 0.5 0.828992426 L 0.5 0.828992426 ">
+                        <drawers count="2">
+                            <_0 class="0" name="Stroke" enabled="0" opacity="1" blendmode="0" fillmode="0" stroke="5" salign="0" smode="0">
+                                <solidfiller fill="0.678431,0.308611,1,1" />
+                                <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                    <gradient count="2">
+                                        <_0 color="0,0,0,1" colorlocation="0" />
+                                        <_1 color="1,0,0,1" colorlocation="1" />
+                                    </gradient>
+                                </gradientfiller>
+                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                                <style linecapstyle="0" linejoinstyle="0" flatness="0.1" miterlimit="10" linedashphase="0" />
+                                <arrows startarrowstyle="0" startarrowscale="1" endarrowstyle="0" endarrowscale="1" />
+                                <brush angle="0.785398" roundness="0.333333" />
+                            </_0>
+                            <_1 class="1" name="Fill" enabled="1" opacity="1" blendmode="0" fillmode="0" winding="0">
+                                <solidfiller fill="0.671527,0.312044,0.999237,1" />
+                                <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                    <gradient count="2">
+                                        <_0 color="0,0,0,1" colorlocation="0" />
+                                        <_1 color="1,0,0,1" colorlocation="1" />
+                                    </gradient>
+                                </gradientfiller>
+                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                            </_1>
+                        </drawers>
+                    </_2>
+                    <_3 class="PathShape" GUID="{a00223df-5806-8040-ad1d-bde4d449bcac}" name="Path" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="0" ctm="(419.2663681803272,0, 0,508.1035497114722, 192.5570951748884,95.72642972694204)" pivotPoint="0.5,0.5" d="F1 M 0.948295951 0.47065708 C 0.948295951 0.47065708 0.990907669 0.47065708 0.990907669 0.47065708 C 0.990907669 0.47065708 1 0.422621667 1 0.422621667 C 1 0.422621667 0.982309639 0.364224553 0.964102387 0.342802435 C 0.944756389 0.320040464 0.835571527 0.252940446 0.835571527 0.252940446 C 0.835571527 0.252940446 0.800102711 0.189087301 0.758223355 0.161223486 C 0.7305758 0.142828479 0.594273388 0.104929157 0.594273388 0.104929157 C 0.594273388 0.104929157 0.624610126 0 0.624610126 0 C 0.624610126 0 0.60802722 0 0.60802722 0 C 0.60802722 0 0.528903842 0.0329419486 0.510025203 0.047336977 C 0.491714627 0.0612987988 0.43876949 0.131736577 0.43876949 0.131736577 C 0.43876949 0.131736577 0.431304693 0.111964926 0.409752131 0.108469561 C 0.391979098 0.105587162 0.334412843 0.118169852 0.32574591 0.136390656 C 0.322713941 0.142764762 0.33838436 0.169001415 0.33838436 0.169001415 C 0.33838436 0.169001415 0.32574591 0.176852658 0.32574591 0.176852658 C 0.32574591 0.176852658 0.30954051 0.155981451 0.300780982 0.155230641 C 0.281214982 0.15355359 0.222281247 0.181928709 0.219748706 0.201230571 C 0.218670487 0.209448874 0.248057038 0.23532851 0.248057038 0.23532851 C 0.248057038 0.23532851 0.240888953 0.243258595 0.240888953 0.243258595 C 0.240888953 0.243258595 0.205426708 0.221104726 0.194279358 0.223475233 C 0.176040009 0.227353975 0.136480033 0.268118024 0.141784936 0.287994057 C 0.144278497 0.297336847 0.186082318 0.318848342 0.186082318 0.318848342 C 0.186082318 0.318848342 0.179087013 0.326112747 0.179087013 0.326112747 C 0.179087013 0.326112747 0.134093344 0.306192607 0.122106165 0.310765982 C 0.105157353 0.3172324 0.0768686458 0.362807006 0.0866869017 0.382047266 C 0.0910363495 0.390570551 0.134671569 0.40593031 0.134671569 0.40593031 C 0.134671569 0.40593031 0.129615381 0.415729553 0.129615381 0.415729553 C 0.129615381 0.415729553 0.0834195465 0.400942326 0.0725800842 0.40656361 C 0.0568355769 0.414728582 0.0366999283 0.462910593 0.0490131825 0.480780363 C 0.054887142 0.489305079 0.102789432 0.501637757 0.102789432 0.501637757 C 0.102789432 0.501637757 0.0472716242 0.495719016 0.0386641249 0.501637757 C 0.0245273653 0.5113585 0.00768414233 0.558083177 0.0220710468 0.576314926 C 0.02916722 0.585307598 0.0823288485 0.596477807 0.0823288485 0.596477807 C 0.0823288485 0.596477807 0.0301218107 0.598308027 0.0220710468 0.605362713 C 0.00982498564 0.616093636 -0.00433756132 0.661529899 0.0116658276 0.67855984 C 0.019513296 0.686910689 0.0732747838 0.692956209 0.0732747838 0.692956209 C 0.0732747838 0.692956209 0.018905269 0.697286308 0.0116658276 0.704813778 C -8.51007862e-05 0.717032075 -0.00728113158 0.766934991 0.0116658276 0.782805324 C 0.0202181712 0.789969027 0.0718071535 0.790882587 0.0718071535 0.790882587 C 0.0718071535 0.790882587 0.0183526874 0.797260165 0.0116658276 0.804495096 C 0.000474787899 0.816603601 -0.00375174126 0.862661123 0.0116658276 0.880635023 C 0.0477134623 0.922659755 0.288080484 0.99999994 0.288080484 0.99999994 C 0.288080484 0.99999994 0.675635517 0.99999994 0.675635517 0.99999994 C 0.675635517 0.99999994 0.896215439 0.927052498 0.896215439 0.927052498 C 0.896215439 0.927052498 0.894795358 0.854600608 0.871161163 0.803740025 C 0.857500911 0.77434361 0.804265022 0.716895819 0.756029785 0.67855984 C 0.725498259 0.654294252 0.646054924 0.614909351 0.601327717 0.560098112 C 0.58635056 0.541744351 0.553782642 0.456654131 0.553782642 0.456654131 C 0.553782642 0.456654131 0.627904952 0.475803137 0.655595124 0.477500618 C 0.674508989 0.478660107 0.74999851 0.470085144 0.74999851 0.470085144 C 0.74999851 0.470085144 0.825036824 0.519190907 0.863336742 0.529766262 C 0.871602416 0.532048583 0.906785429 0.532562137 0.906785429 0.532562137 C 0.906785429 0.532562137 0.953974783 0.49999994 0.953974783 0.49999994 C 0.953974783 0.49999994 0.948295951 0.47065708 0.948295951 0.47065708 Z " autoclosed="1" handlesArray="F1 M 0.948295951 0.47065708 L 0.948295951 0.47065708 ">
+                        <drawers count="2">
+                            <_0 class="0" name="Stroke" enabled="1" opacity="1" blendmode="0" fillmode="0" stroke="5" salign="0" smode="0">
+                                <solidfiller fill="0,0,0,1" />
+                                <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                    <gradient count="2">
+                                        <_0 color="0,0,0,1" colorlocation="0" />
+                                        <_1 color="1,0,0,1" colorlocation="1" />
+                                    </gradient>
+                                </gradientfiller>
+                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                                <style linecapstyle="1" linejoinstyle="1" flatness="0.1" miterlimit="10" linedashphase="0" />
+                                <arrows startarrowstyle="0" startarrowscale="1" endarrowstyle="0" endarrowscale="1" />
+                                <brush angle="0.785398" roundness="0.333333" />
+                            </_0>
+                            <_1 class="1" name="Fill" enabled="1" opacity="1" blendmode="0" fillmode="0" winding="0">
+                                <solidfiller fill="0.751932,0.420872,1,1" />
+                                <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                    <gradient count="2">
+                                        <_0 color="0,0,0,1" colorlocation="0" />
+                                        <_1 color="1,0,0,1" colorlocation="1" />
+                                    </gradient>
+                                </gradientfiller>
+                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                            </_1>
+                        </drawers>
+                    </_3>
+                    <_4 class="Layer" GUID="{517741e1-874f-d349-bb41-1e185c6a53ee}" name="Layer 5" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="1" selectioncolor="0.94,0.39,0.96,1" />
+                    <_5 class="PathShape" GUID="{42300ffd-4de9-e340-bdbd-fe2bc27fcdb4}" name="Path Copy Copy" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="0" ctm="(427.923118772793,0, 0,518.5944933919335, 198.4619379029498,105.5678310376391)" pivotPoint="0.5,0.5" d="F1 M 0.948295951 0.47065708 C 0.948295951 0.47065708 0.990907669 0.47065708 0.990907669 0.47065708 C 0.990907669 0.47065708 1 0.422621667 1 0.422621667 C 1 0.422621667 0.982309639 0.364224553 0.964102387 0.342802435 C 0.944756389 0.320040464 0.835571527 0.252940446 0.835571527 0.252940446 C 0.835571527 0.252940446 0.800102711 0.189087301 0.758223355 0.161223486 C 0.7305758 0.142828479 0.594273388 0.104929157 0.594273388 0.104929157 C 0.594273388 0.104929157 0.624610126 0 0.624610126 0 C 0.624610126 0 0.60802722 0 0.60802722 0 C 0.60802722 0 0.528903842 0.0329419486 0.510025203 0.047336977 C 0.491714627 0.0612987988 0.43876949 0.131736577 0.43876949 0.131736577 C 0.43876949 0.131736577 0.431304693 0.111964926 0.409752131 0.108469561 C 0.391979098 0.105587162 0.334412843 0.118169852 0.32574591 0.136390656 C 0.322713941 0.142764762 0.33838436 0.169001415 0.33838436 0.169001415 C 0.33838436 0.169001415 0.32574591 0.176852658 0.32574591 0.176852658 C 0.32574591 0.176852658 0.30954051 0.155981451 0.300780982 0.155230641 C 0.281214982 0.15355359 0.222281247 0.181928709 0.219748706 0.201230571 C 0.218670487 0.209448874 0.248057038 0.23532851 0.248057038 0.23532851 C 0.248057038 0.23532851 0.240888953 0.243258595 0.240888953 0.243258595 C 0.240888953 0.243258595 0.205426708 0.221104726 0.194279358 0.223475233 C 0.176040009 0.227353975 0.136480033 0.268118024 0.141784936 0.287994057 C 0.144278497 0.297336847 0.186082318 0.318848342 0.186082318 0.318848342 C 0.186082318 0.318848342 0.179087013 0.326112747 0.179087013 0.326112747 C 0.179087013 0.326112747 0.134093344 0.306192607 0.122106165 0.310765982 C 0.105157353 0.3172324 0.0768686458 0.362807006 0.0866869017 0.382047266 C 0.0910363495 0.390570551 0.134671569 0.40593031 0.134671569 0.40593031 C 0.134671569 0.40593031 0.129615381 0.415729553 0.129615381 0.415729553 C 0.129615381 0.415729553 0.0834195465 0.400942326 0.0725800842 0.40656361 C 0.0568355769 0.414728582 0.0366999283 0.462910593 0.0490131825 0.480780363 C 0.054887142 0.489305079 0.102789432 0.501637757 0.102789432 0.501637757 C 0.102789432 0.501637757 0.0472716242 0.495719016 0.0386641249 0.501637757 C 0.0245273653 0.5113585 0.00768414233 0.558083177 0.0220710468 0.576314926 C 0.02916722 0.585307598 0.0823288485 0.596477807 0.0823288485 0.596477807 C 0.0823288485 0.596477807 0.0301218107 0.598308027 0.0220710468 0.605362713 C 0.00982498564 0.616093636 -0.00433756132 0.661529899 0.0116658276 0.67855984 C 0.019513296 0.686910689 0.0732747838 0.692956209 0.0732747838 0.692956209 C 0.0732747838 0.692956209 0.018905269 0.697286308 0.0116658276 0.704813778 C -8.51007862e-05 0.717032075 -0.00728113158 0.766934991 0.0116658276 0.782805324 C 0.0202181712 0.789969027 0.0718071535 0.790882587 0.0718071535 0.790882587 C 0.0718071535 0.790882587 0.0183526874 0.797260165 0.0116658276 0.804495096 C 0.000474787899 0.816603601 -0.00375174126 0.862661123 0.0116658276 0.880635023 C 0.0477134623 0.922659755 0.288080484 0.99999994 0.288080484 0.99999994 C 0.288080484 0.99999994 0.675635517 0.99999994 0.675635517 0.99999994 C 0.675635517 0.99999994 0.896215439 0.927052498 0.896215439 0.927052498 C 0.896215439 0.927052498 0.894795358 0.854600608 0.871161163 0.803740025 C 0.857500911 0.77434361 0.804265022 0.716895819 0.756029785 0.67855984 C 0.725498259 0.654294252 0.646054924 0.614909351 0.601327717 0.560098112 C 0.58635056 0.541744351 0.553782642 0.456654131 0.553782642 0.456654131 C 0.553782642 0.456654131 0.627904952 0.475803137 0.655595124 0.477500618 C 0.674508989 0.478660107 0.74999851 0.470085144 0.74999851 0.470085144 C 0.74999851 0.470085144 0.825036824 0.519190907 0.863336742 0.529766262 C 0.871602416 0.532048583 0.906785429 0.532562137 0.906785429 0.532562137 C 0.906785429 0.532562137 0.953974783 0.49999994 0.953974783 0.49999994 C 0.953974783 0.49999994 0.948295951 0.47065708 0.948295951 0.47065708 Z " autoclosed="1" handlesArray="F1 M 0.948295951 0.47065708 L 0.948295951 0.47065708 ">
+                        <drawers count="2">
+                            <_0 class="0" name="Stroke" enabled="0" opacity="1" blendmode="0" fillmode="0" stroke="5" salign="0" smode="0">
+                                <solidfiller fill="0,0,0,1" />
+                                <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                    <gradient count="2">
+                                        <_0 color="0,0,0,1" colorlocation="0" />
+                                        <_1 color="1,0,0,1" colorlocation="1" />
+                                    </gradient>
+                                </gradientfiller>
+                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                                <style linecapstyle="1" linejoinstyle="1" flatness="0.1" miterlimit="10" linedashphase="0" />
+                                <arrows startarrowstyle="0" startarrowscale="1" endarrowstyle="0" endarrowscale="1" />
+                                <brush angle="0.785398" roundness="0.333333" />
+                            </_0>
+                            <_1 class="1" name="Fill" enabled="1" opacity="1" blendmode="0" fillmode="0" winding="0">
+                                <solidfiller fill="0.675866,0.311659,0.999196,1" />
+                                <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                    <gradient count="2">
+                                        <_0 color="0,0,0,1" colorlocation="0" />
+                                        <_1 color="1,0,0,1" colorlocation="1" />
+                                    </gradient>
+                                </gradientfiller>
+                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                            </_1>
+                        </drawers>
+                    </_5>
+                    <_6 class="PathShape" GUID="{eb47277a-c62d-5245-86c9-3b318eecf6d9}" name="Path Copy Copy Copy" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="0" ctm="(437.2919598966199,0, 0,529.9484076165634, 174.5315062418155,83.7229752140662)" pivotPoint="0.5,0.5" d="F1 M 0.948295951 0.47065708 C 0.948295951 0.47065708 0.990907669 0.47065708 0.990907669 0.47065708 C 0.990907669 0.47065708 1 0.422621667 1 0.422621667 C 1 0.422621667 0.982309639 0.364224553 0.964102387 0.342802435 C 0.944756389 0.320040464 0.835571527 0.252940446 0.835571527 0.252940446 C 0.835571527 0.252940446 0.800102711 0.189087301 0.758223355 0.161223486 C 0.7305758 0.142828479 0.594273388 0.104929157 0.594273388 0.104929157 C 0.594273388 0.104929157 0.624610126 0 0.624610126 0 C 0.624610126 0 0.60802722 0 0.60802722 0 C 0.60802722 0 0.528903842 0.0329419486 0.510025203 0.047336977 C 0.491714627 0.0612987988 0.43876949 0.131736577 0.43876949 0.131736577 C 0.43876949 0.131736577 0.431304693 0.111964926 0.409752131 0.108469561 C 0.391979098 0.105587162 0.334412843 0.118169852 0.32574591 0.136390656 C 0.322713941 0.142764762 0.33838436 0.169001415 0.33838436 0.169001415 C 0.33838436 0.169001415 0.32574591 0.176852658 0.32574591 0.176852658 C 0.32574591 0.176852658 0.30954051 0.155981451 0.300780982 0.155230641 C 0.281214982 0.15355359 0.222281247 0.181928709 0.219748706 0.201230571 C 0.218670487 0.209448874 0.248057038 0.23532851 0.248057038 0.23532851 C 0.248057038 0.23532851 0.240888953 0.243258595 0.240888953 0.243258595 C 0.240888953 0.243258595 0.205426708 0.221104726 0.194279358 0.223475233 C 0.176040009 0.227353975 0.136480033 0.268118024 0.141784936 0.287994057 C 0.144278497 0.297336847 0.186082318 0.318848342 0.186082318 0.318848342 C 0.186082318 0.318848342 0.179087013 0.326112747 0.179087013 0.326112747 C 0.179087013 0.326112747 0.134093344 0.306192607 0.122106165 0.310765982 C 0.105157353 0.3172324 0.0768686458 0.362807006 0.0866869017 0.382047266 C 0.0910363495 0.390570551 0.134671569 0.40593031 0.134671569 0.40593031 C 0.134671569 0.40593031 0.129615381 0.415729553 0.129615381 0.415729553 C 0.129615381 0.415729553 0.0834195465 0.400942326 0.0725800842 0.40656361 C 0.0568355769 0.414728582 0.0366999283 0.462910593 0.0490131825 0.480780363 C 0.054887142 0.489305079 0.102789432 0.501637757 0.102789432 0.501637757 C 0.102789432 0.501637757 0.0472716242 0.495719016 0.0386641249 0.501637757 C 0.0245273653 0.5113585 0.00768414233 0.558083177 0.0220710468 0.576314926 C 0.02916722 0.585307598 0.0823288485 0.596477807 0.0823288485 0.596477807 C 0.0823288485 0.596477807 0.0301218107 0.598308027 0.0220710468 0.605362713 C 0.00982498564 0.616093636 -0.00433756132 0.661529899 0.0116658276 0.67855984 C 0.019513296 0.686910689 0.0732747838 0.692956209 0.0732747838 0.692956209 C 0.0732747838 0.692956209 0.018905269 0.697286308 0.0116658276 0.704813778 C -8.51007862e-05 0.717032075 -0.00728113158 0.766934991 0.0116658276 0.782805324 C 0.0202181712 0.789969027 0.0718071535 0.790882587 0.0718071535 0.790882587 C 0.0718071535 0.790882587 0.0183526874 0.797260165 0.0116658276 0.804495096 C 0.000474787899 0.816603601 -0.00375174126 0.862661123 0.0116658276 0.880635023 C 0.0477134623 0.922659755 0.288080484 0.99999994 0.288080484 0.99999994 C 0.288080484 0.99999994 0.675635517 0.99999994 0.675635517 0.99999994 C 0.675635517 0.99999994 0.896215439 0.927052498 0.896215439 0.927052498 C 0.896215439 0.927052498 0.894795358 0.854600608 0.871161163 0.803740025 C 0.857500911 0.77434361 0.804265022 0.716895819 0.756029785 0.67855984 C 0.725498259 0.654294252 0.646054924 0.614909351 0.601327717 0.560098112 C 0.58635056 0.541744351 0.553782642 0.456654131 0.553782642 0.456654131 C 0.553782642 0.456654131 0.627904952 0.475803137 0.655595124 0.477500618 C 0.674508989 0.478660107 0.74999851 0.470085144 0.74999851 0.470085144 C 0.74999851 0.470085144 0.825036824 0.519190907 0.863336742 0.529766262 C 0.871602416 0.532048583 0.906785429 0.532562137 0.906785429 0.532562137 C 0.906785429 0.532562137 0.953974783 0.49999994 0.953974783 0.49999994 C 0.953974783 0.49999994 0.948295951 0.47065708 0.948295951 0.47065708 Z " autoclosed="1" handlesArray="F1 M 0.948295951 0.47065708 L 0.948295951 0.47065708 ">
+                        <drawers count="2">
+                            <_0 class="0" name="Stroke" enabled="0" opacity="1" blendmode="0" fillmode="0" stroke="5" salign="0" smode="0">
+                                <solidfiller fill="0,0,0,1" />
+                                <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                    <gradient count="2">
+                                        <_0 color="0,0,0,1" colorlocation="0" />
+                                        <_1 color="1,0,0,1" colorlocation="1" />
+                                    </gradient>
+                                </gradientfiller>
+                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                                <style linecapstyle="1" linejoinstyle="1" flatness="0.1" miterlimit="10" linedashphase="0" />
+                                <arrows startarrowstyle="0" startarrowscale="1" endarrowstyle="0" endarrowscale="1" />
+                                <brush angle="0.785398" roundness="0.333333" />
+                            </_0>
+                            <_1 class="1" name="Fill" enabled="1" opacity="1" blendmode="0" fillmode="0" winding="0">
+                                <solidfiller fill="0.675866,0.311659,0.999196,1" />
+                                <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                    <gradient count="2">
+                                        <_0 color="0,0,0,1" colorlocation="0" />
+                                        <_1 color="1,0,0,1" colorlocation="1" />
+                                    </gradient>
+                                </gradientfiller>
+                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                            </_1>
+                        </drawers>
+                    </_6>
+                    <_7 class="PathShape" GUID="{969f6c5d-a3a4-6f4a-a133-a0cad0453649}" name="Path Copy" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="0" ctm="(419.2663681803272,0, 0,508.1035497114725, 192.5570951748884,95.72642972694196)" pivotPoint="0.5,0.5" d="F1 M 0.948295951 0.47065708 C 0.948295951 0.47065708 0.990907669 0.47065708 0.990907669 0.47065708 C 0.990907669 0.47065708 1 0.422621667 1 0.422621667 C 1 0.422621667 0.982309639 0.364224553 0.964102387 0.342802435 C 0.944756389 0.320040464 0.835571527 0.252940446 0.835571527 0.252940446 C 0.835571527 0.252940446 0.800102711 0.189087301 0.758223355 0.161223486 C 0.7305758 0.142828479 0.594273388 0.104929157 0.594273388 0.104929157 C 0.594273388 0.104929157 0.624610126 0 0.624610126 0 C 0.624610126 0 0.60802722 0 0.60802722 0 C 0.60802722 0 0.528903842 0.0329419486 0.510025203 0.047336977 C 0.491714627 0.0612987988 0.43876949 0.131736577 0.43876949 0.131736577 C 0.43876949 0.131736577 0.431304693 0.111964926 0.409752131 0.108469561 C 0.391979098 0.105587162 0.334412843 0.118169852 0.32574591 0.136390656 C 0.322713941 0.142764762 0.33838436 0.169001415 0.33838436 0.169001415 C 0.33838436 0.169001415 0.32574591 0.176852658 0.32574591 0.176852658 C 0.32574591 0.176852658 0.30954051 0.155981451 0.300780982 0.155230641 C 0.281214982 0.15355359 0.222281247 0.181928709 0.219748706 0.201230571 C 0.218670487 0.209448874 0.248057038 0.23532851 0.248057038 0.23532851 C 0.248057038 0.23532851 0.240888953 0.243258595 0.240888953 0.243258595 C 0.240888953 0.243258595 0.205426708 0.221104726 0.194279358 0.223475233 C 0.176040009 0.227353975 0.136480033 0.268118024 0.141784936 0.287994057 C 0.144278497 0.297336847 0.186082318 0.318848342 0.186082318 0.318848342 C 0.186082318 0.318848342 0.179087013 0.326112747 0.179087013 0.326112747 C 0.179087013 0.326112747 0.134093344 0.306192607 0.122106165 0.310765982 C 0.105157353 0.3172324 0.0768686458 0.362807006 0.0866869017 0.382047266 C 0.0910363495 0.390570551 0.134671569 0.40593031 0.134671569 0.40593031 C 0.134671569 0.40593031 0.129615381 0.415729553 0.129615381 0.415729553 C 0.129615381 0.415729553 0.0834195465 0.400942326 0.0725800842 0.40656361 C 0.0568355769 0.414728582 0.0366999283 0.462910593 0.0490131825 0.480780363 C 0.054887142 0.489305079 0.102789432 0.501637757 0.102789432 0.501637757 C 0.102789432 0.501637757 0.0472716242 0.495719016 0.0386641249 0.501637757 C 0.0245273653 0.5113585 0.00768414233 0.558083177 0.0220710468 0.576314926 C 0.02916722 0.585307598 0.0823288485 0.596477807 0.0823288485 0.596477807 C 0.0823288485 0.596477807 0.0301218107 0.598308027 0.0220710468 0.605362713 C 0.00982498564 0.616093636 -0.00433756132 0.661529899 0.0116658276 0.67855984 C 0.019513296 0.686910689 0.0732747838 0.692956209 0.0732747838 0.692956209 C 0.0732747838 0.692956209 0.018905269 0.697286308 0.0116658276 0.704813778 C -8.51007862e-05 0.717032075 -0.00728113158 0.766934991 0.0116658276 0.782805324 C 0.0202181712 0.789969027 0.0718071535 0.790882587 0.0718071535 0.790882587 C 0.0718071535 0.790882587 0.0183526874 0.797260165 0.0116658276 0.804495096 C 0.000474787899 0.816603601 -0.00375174126 0.862661123 0.0116658276 0.880635023 C 0.0477134623 0.922659755 0.288080484 0.99999994 0.288080484 0.99999994 C 0.288080484 0.99999994 0.675635517 0.99999994 0.675635517 0.99999994 C 0.675635517 0.99999994 0.896215439 0.927052498 0.896215439 0.927052498 C 0.896215439 0.927052498 0.894795358 0.854600608 0.871161163 0.803740025 C 0.857500911 0.77434361 0.804265022 0.716895819 0.756029785 0.67855984 C 0.725498259 0.654294252 0.646054924 0.614909351 0.601327717 0.560098112 C 0.58635056 0.541744351 0.553782642 0.456654131 0.553782642 0.456654131 C 0.553782642 0.456654131 0.627904952 0.475803137 0.655595124 0.477500618 C 0.674508989 0.478660107 0.74999851 0.470085144 0.74999851 0.470085144 C 0.74999851 0.470085144 0.825036824 0.519190907 0.863336742 0.529766262 C 0.871602416 0.532048583 0.906785429 0.532562137 0.906785429 0.532562137 C 0.906785429 0.532562137 0.953974783 0.49999994 0.953974783 0.49999994 C 0.953974783 0.49999994 0.948295951 0.47065708 0.948295951 0.47065708 Z " autoclosed="1" handlesArray="F1 M 0.948295951 0.47065708 L 0.948295951 0.47065708 ">
+                        <drawers count="2">
+                            <_0 class="0" name="Stroke" enabled="0" opacity="1" blendmode="0" fillmode="0" stroke="5" salign="0" smode="0">
+                                <solidfiller fill="0,0,0,1" />
+                                <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                    <gradient count="2">
+                                        <_0 color="0,0,0,1" colorlocation="0" />
+                                        <_1 color="1,0,0,1" colorlocation="1" />
+                                    </gradient>
+                                </gradientfiller>
+                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                                <style linecapstyle="1" linejoinstyle="1" flatness="0.1" miterlimit="10" linedashphase="0" />
+                                <arrows startarrowstyle="0" startarrowscale="1" endarrowstyle="0" endarrowscale="1" />
+                                <brush angle="0.785398" roundness="0.333333" />
+                            </_0>
+                            <_1 class="1" name="Fill" enabled="1" opacity="1" blendmode="0" fillmode="0" winding="0">
+                                <solidfiller fill="0.2167,0.846202,1,1" />
+                                <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                    <gradient count="2">
+                                        <_0 color="0,0,0,1" colorlocation="0" />
+                                        <_1 color="1,0,0,1" colorlocation="1" />
+                                    </gradient>
+                                </gradientfiller>
+                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                            </_1>
+                        </drawers>
+                    </_7>
+                </Objects>
+            </_1>
+            <_2 class="Layer" GUID="{6c74934d-5de6-b34f-b185-b79d3494d781}" name="Layer 4" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="1" selectioncolor="0.32,0.32,0.89,1">
+                <Objects count="1">
+                    <_0 class="PathShape" GUID="{f27fd4bc-caae-8640-9a98-29b5c32043ac}" name="Path" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="0" ctm="(127.3271262007858,-4.09165962187499, 10.70835874412558,333.2299651816049, 248.5262143608034,185.2750355635598)" pivotPoint="0.5,0.5" d="F1 M 0.0322622173 1 C 0.0322622173 1 -0.14331302 0.686283231 0.324719459 0.322652519 C 0.652954936 0.067634955 1 0 1 0 " autoclosed="0" handlesArray="F1 M 0.0322622173 1 L 1 0 ">
+                        <drawers count="2">
+                            <_0 class="0" name="Stroke" enabled="1" opacity="1" blendmode="0" fillmode="0" stroke="6" salign="0" smode="2">
+                                <solidfiller fill="0.671527,0.312044,0.999237,1" />
+                                <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                    <gradient count="2">
+                                        <_0 color="0,0,0,1" colorlocation="0" />
+                                        <_1 color="1,0,0,1" colorlocation="1" />
+                                    </gradient>
+                                </gradientfiller>
+                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                                <style linecapstyle="0" linejoinstyle="0" flatness="0.1" miterlimit="10" linedashphase="0" />
+                                <arrows startarrowstyle="0" startarrowscale="1" endarrowstyle="0" endarrowscale="1" />
+                                <brush angle="0.785398" roundness="0.333333" />
+                                <strokeprofile spplaces="0,0.521848,1" sprightradius="1,2.87799,1" spleftradius="1,2.87799,1" />
+                            </_0>
+                            <_1 class="1" name="Fill" enabled="0" opacity="1" blendmode="0" fillmode="0" winding="0">
+                                <solidfiller fill="0.751932,0.420872,1,1" />
+                                <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                    <gradient count="2">
+                                        <_0 color="0,0,0,1" colorlocation="0" />
+                                        <_1 color="1,0,0,1" colorlocation="1" />
+                                    </gradient>
+                                </gradientfiller>
+                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                            </_1>
+                        </drawers>
+                    </_0>
+                </Objects>
+            </_2>
+            <_3 class="Layer" GUID="{b650fce6-9fea-f14a-b60e-0b8b5862abbe}" name="Layer 3" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="1" selectioncolor="0.48,0.94,0.44,1">
+                <Objects count="1">
+                    <_0 class="PathShape" GUID="{ef18da9f-c314-654d-9121-f244946060b2}" name="Shape 14825" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="0" ctm="(208.4762313343167,0, 0,208.4761225778321, 300.3976636630832,499.5920107443112)" pivotPoint="0.5,0.5" d="M 0.5 0.828992426 C 0.5 0.828992426 0.328992486 1 0.328992486 1 C 0.328992486 1 2.22044605e-16 0.671007454 2.22044605e-16 0.671007454 C 2.22044605e-16 0.671007454 0.171007514 0.499999911 0.171007514 0.499999911 C 0.171007514 0.499999911 1.71697394e-07 0.328992546 1.71697394e-07 0.328992546 C 1.71697394e-07 0.328992546 0.328992665 0 0.328992665 0 C 0.328992665 0 0.5 0.17100738 0.5 0.17100738 C 0.5 0.17100738 0.671007156 1.71697437e-07 0.671007156 1.71697437e-07 C 0.671007156 1.71697437e-07 0.999999642 0.328992695 0.999999642 0.328992695 C 0.999999642 0.328992695 0.828992486 0.499999911 0.828992486 0.499999911 C 0.828992486 0.499999911 1 0.671007454 1 0.671007454 C 1 0.671007454 0.671007335 1 0.671007335 1 C 0.671007335 1 0.5 0.828992426 0.5 0.828992426 Z " autoclosed="0" handlesArray="F1 M 0.5 0.828992426 L 0.5 0.828992426 ">
+                        <drawers count="2">
+                            <_0 class="0" name="Stroke" enabled="1" opacity="1" blendmode="0" fillmode="0" stroke="17" salign="0" smode="0">
+                                <solidfiller fill="0.678431,0.308611,1,1" />
+                                <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                    <gradient count="2">
+                                        <_0 color="0,0,0,1" colorlocation="0" />
+                                        <_1 color="1,0,0,1" colorlocation="1" />
+                                    </gradient>
+                                </gradientfiller>
+                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                                <style linecapstyle="0" linejoinstyle="0" flatness="0.1" miterlimit="10" linedashphase="0" />
+                                <arrows startarrowstyle="0" startarrowscale="1" endarrowstyle="0" endarrowscale="1" />
+                                <brush angle="0.785398" roundness="0.333333" />
+                            </_0>
+                            <_1 class="1" name="Fill" enabled="1" opacity="1" blendmode="0" fillmode="0" winding="0">
+                                <solidfiller fill="0.208295,0.848638,1,1" />
+                                <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                    <gradient count="2">
+                                        <_0 color="0,0,0,1" colorlocation="0" />
+                                        <_1 color="1,0,0,1" colorlocation="1" />
+                                    </gradient>
+                                </gradientfiller>
+                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                            </_1>
+                        </drawers>
+                    </_0>
+                </Objects>
+            </_3>
+        </Objects>
+    </Drawing>
+</Document>
