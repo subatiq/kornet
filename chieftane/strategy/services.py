@@ -1,35 +1,64 @@
-from ipaddress import IPv4Address
+"""
+Basic use cases implemented:
+- gather intel from host
+- gather intel from fleet
+- execute strategy on host
+- execute strategy on fleet
+"""
+
+from loguru import logger
+
 from chieftane.fleet.models import Fleet, Machine
 from chieftane.strategy.adapters.abstract import SSHCommunicator
 from chieftane.strategy.machines.models import MachineFacts
-from chieftane.strategy.models import Strategy
-from loguru import logger
+from chieftane.strategy.models import Strategy, StrategyOutcome
 from chieftane.strategy.orders.models import Order, OrderOutcome
-
-from chieftane.strategy.orders.recon.catalog import RECON_CATALOG
 from chieftane.strategy.orders.recon.models import Recon
 
 
-def recon_fleet(comm: SSHCommunicator, fleet: Fleet) -> dict[IPv4Address, MachineFacts]:
-    facts = {}
-    for host in fleet.machines:
-        machine_facts = MachineFacts()
-        for key, recon in RECON_CATALOG.items():
-            execute_order(comm, recon, host, hide_output=True)
-            
-            machine_facts.__setattr__(key, recon.intel)
-    
-        facts[host.ip] = machine_facts
-        logger.info(f'Gathered info on {host.ip}:\n\t{machine_facts}')
-    return facts
+def update_fleet_facts(comm: SSHCommunicator, orders: list[Recon], fleet: Fleet) -> Fleet:
+    updated_fleet = fleet.copy()
+    for host in updated_fleet.machines:
+        update_host_facts(comm, orders, host)
 
-    
-def gather_intel(comm: SSHCommunicator, order: Recon, host: Machine):
-    execute_order(comm, order, host)
-    return order.intel
+    return updated_fleet
+
+
+def update_host_facts(comm: SSHCommunicator, orders: list[Recon], host: Machine) -> Machine:
+    facts = MachineFacts()
+    updated_host = host.copy()
+    for order in orders:
+        execute_order(comm, order, updated_host)
+        if not order.intel:
+            continue
+        facts.append(order.intel)
+
+    updated_host.facts.update(facts)
+    return updated_host
+
+
+def handle_failed_order(order: Order, host: Machine):
+    logger.error(f'Failed to execute order "{order.name}" on {host.ip}')
+    if order.outcome:
+        logger.error(f"{order.outcome.errors}")
+
+
+def handle_successful_order(order: Order, host: Machine):
+    if isinstance(order, Recon) and order.intel:
+        logger.info(f"Got intel from {order.name} on {host.ip}:\n{order.intel.yaml()}")
+    elif order.outcome:
+        logger.info(
+            'Order "{}" on {} finished with \n\tExit code: {}\n\tOutput:\n{}',
+            order.name,
+            host.ip,
+            order.outcome.code,
+            order.outcome.yaml(),
+        )
 
 
 def execute_order(comm: SSHCommunicator, order: Order, host: Machine, hide_output=False):
+    order.silent = hide_output or order.silent
+
     logger.info(f'Executing order "{order.name}" on {host.ip}')
     try:
         order = comm.execute_order(order, host)
@@ -38,29 +67,46 @@ def execute_order(comm: SSHCommunicator, order: Order, host: Machine, hide_outpu
         order.outcome = OrderOutcome(code=-1, outputs=[], errors=str(exc))
 
     if order.failed or not order.outcome:
-        logger.error(f'Failed to execute order "{order.name}" on {host.ip}. ')
-        if order.outcome:
-            logger.error(f'{order.outcome.errors}')
-    else:
-        if hide_output or order.silent:
-            return
-        if isinstance(order, Recon) and order.intel:
-            logger.info(
-                f'Got intel from {order.name} on {host.ip}:\n{order.intel.yaml()}'
-            )
-        elif order.outcome.outputs:
-            logger.info(
-                f'Order "{order.name}" on {host.ip} finished with \n\tExit code: {order.outcome.code}\n\tOutput:\n{order.outcome.yaml()}'
-            )
+        handle_failed_order(order, host)
+    elif not order.silent:
+        logger.info(f'Successfully executed order "{order.name}" on {host.ip}')
+        handle_successful_order(order, host)
+
+    return order
 
 
-def execute_strategy(comm: SSHCommunicator, strategy: Strategy, inventory: Fleet):
-    for host in inventory.machines:
-        for order in strategy.orders:
-            execute_order(comm, order, host)
-            if order.failed:
-                break
+def execute_strategy_on_host(
+    comm: SSHCommunicator, strategy: Strategy, host: Machine, recon: bool = True
+):
+    """Execute strategy on host"""
+    if recon:
+        host = update_host_facts(comm, strategy.recon, host)
 
-        logger.info(
-            f'Finished executing strategy on {host.ssh.username}@{host.ip}:{host.ssh.port}. Outcomes:\nSuccess: {len(strategy.outcome.success)}\nError: {len(strategy.outcome.error)}\n' + '-' * 80
-        )
+    for order in strategy.orders:
+        if isinstance(order, Recon) and not recon:
+            continue
+
+        execute_order(comm, order, host)
+        if order.failed:
+            break
+
+    logger.info(
+        "Finished executing strategy on {}@{}:{}. Outcomes:\nSuccess: {}\nError: {}\n",
+        host.ssh.username,
+        host.ip,
+        host.ssh.port,
+        len(strategy.outcome.success),
+        len(strategy.outcome.error),
+    )
+
+    return strategy.outcome
+
+
+def execute_strategy_on_fleet(
+    comm: SSHCommunicator, strategy: Strategy, fleet: Fleet, recon: bool = True
+) -> StrategyOutcome:
+    """Execute strategy on fleet"""
+    for host in fleet.machines:
+        execute_strategy_on_host(comm, strategy, host, recon)
+
+    return strategy.outcome

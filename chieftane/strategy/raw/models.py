@@ -1,20 +1,27 @@
 from __future__ import annotations
+
 from typing import Union
+
 from chieftane.shared.models import Model
+from chieftane.strategy.models import Strategy
 from chieftane.strategy.orders.models import Order
-from chieftane.strategy.orders.recon.models import ReconAlias
 from chieftane.strategy.orders.recon.catalog import RECON_CATALOG
+from chieftane.strategy.orders.recon.models import Recon, ReconAlias
 
 
 class RawStrategy(Model):
-    __root__: list[Union[Order, ReconAlias]] = list()
+    recon: list[Union[ReconAlias, Recon]]
+    orders: list[Order] = list()
 
-    def parsed_orders(self, orders: list[Union[Order, ReconAlias]]) -> list[Order]:
+    def to_strategy(self) -> Strategy:
+        parsed_recon = []
         parsed_orders = []
-        for order in orders:
+        for order in self.orders + self.recon:  # type: ignore
             if isinstance(order, ReconAlias):
-                parsed_orders.append(RECON_CATALOG[order.recon.lower()])
+                parsed_recon.append(RECON_CATALOG[order.__root__])
+            elif isinstance(order, Recon):
+                parsed_recon.append(order)
             else:
                 parsed_orders.append(order)
 
-        return parsed_orders
+        return Strategy(orders=parsed_orders, recon=parsed_recon)

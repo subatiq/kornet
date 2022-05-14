@@ -4,7 +4,6 @@ from chieftane.fleet.models import Machine
 from chieftane.strategy.orders.models import Order
 
 
-
 class SSHCommunicator(ABC):
     @abstractmethod
     def execute_order(self, order: Order, machine: Machine) -> Order:
