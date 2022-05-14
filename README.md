@@ -46,5 +46,7 @@ python3 -m chieftane <strategy_file.yml> <fleet_file.yml> <group>
 ```
 
 **strategy file** - yaml strategy file described above
+
 **fleet file** - yaml fleet file described above
+
 **group** - group to run the strategy on
