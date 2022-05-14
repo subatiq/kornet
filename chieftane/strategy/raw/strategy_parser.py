@@ -8,7 +8,7 @@ from chieftane.strategy.models import Strategy
 from chieftane.strategy.raw.models import RawStrategy
 
 
-def parse_strategy_object(strategy: list[dict[str, Any]]) -> Strategy:
+def parse_strategy_object(strategy: dict[str, list[dict[str, Any]]]) -> Strategy:
     raw = RawStrategy.parse_obj(strategy)
 
     return raw.to_strategy()

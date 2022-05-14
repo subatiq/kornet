@@ -7,13 +7,13 @@ all_packages = find_packages()
 setup(
     name="chieftane",
     packages=all_packages,
-    version="0.0.2",
+    version="0.0.4",
     license="MIT",
     description="A library for mass execution of ssh commands on remote machines fleet.",
     author="Vladimir Semenov",
     author_email="subatiq@gmail.com",
     url="https://github.com/subatiq/chieftane",
-    download_url="https://github.com/subatiq/chieftane/archive/refs/tags/pre-0.0.0.tar.gz",
+    download_url="https://github.com/subatiq/chieftane/archive/refs/tags/pre-0.0.3.tar.gz",
     keywords=["SSH", "AUTOMATION", "ORCHESTRATION"],
     install_requires=[
         "paramiko",
