@@ -1,5 +1,5 @@
-from contextlib import contextmanager
-from typing import Iterator
+from contextlib import asynccontextmanager
+from typing import AsyncIterator
 
 import paramiko
 from loguru import logger
@@ -19,8 +19,8 @@ class ParamikoSSHCommunicator(SSHCommunicator):
 
         return OrderOutcome(code=exit_code, outputs=stdout_lines, errors="\n".join(stderr_lines))
 
-    @contextmanager
-    def shared_session(self, machine: Machine) -> Iterator[paramiko.SSHClient]:
+    @asynccontextmanager
+    async def shared_session(self, machine: Machine) -> AsyncIterator[paramiko.SSHClient]:
         session = paramiko.SSHClient()
         session.load_system_host_keys()
         session.set_missing_host_key_policy(paramiko.AutoAddPolicy())
@@ -37,13 +37,6 @@ class ParamikoSSHCommunicator(SSHCommunicator):
         yield session
         session.close()
 
-    # def execute_order(self, order: Order, machine: Machine) -> Order:
-    #     with self.shared_session(machine) as session:
-    #         return self.execute_in_session(session, order)
-
-    def execute_in_session(self, session: paramiko.SSHClient, order: Order) -> Order:
+    async def execute_in_session(self, session: paramiko.SSHClient, order: Order) -> Order:
         order.outcome = self._execute_command(session, order.command)
         return order
-
-    async def execute_in_session_async(self, session: paramiko.SSHClient, order: Order) -> Order:
-        return self.execute_in_session(session, order)
