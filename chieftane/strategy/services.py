@@ -116,6 +116,7 @@ def execute_strategy_on_fleet(
     comm: SSHCommunicator, strategy: Strategy, fleet: Fleet, recon: bool = True
 ) -> dict[Machine, StrategyOutcome]:
     """Execute strategy on fleet"""
-    loop = asyncio.get_event_loop()
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
     results = loop.run_until_complete(async_execute_strategy_on_fleet(comm, strategy, fleet, recon))
     return results
