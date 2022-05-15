@@ -5,6 +5,8 @@ Basic use cases implemented:
 - execute strategy on fleet
 """
 
+import asyncio
+
 from loguru import logger
 
 from chieftane.fleet.models import Fleet, Machine
@@ -15,13 +17,16 @@ from chieftane.strategy.orders.models import Order, OrderOutcome
 from chieftane.strategy.orders.recon.models import Recon
 
 
-def get_host_facts(comm: SSHCommunicator, orders: list[Recon], host: Machine) -> MachineFacts:
+async def get_host_facts(comm, orders: list[Recon], host: Machine) -> MachineFacts:
     facts = MachineFacts()
-    for order in orders:
-        execute_order(comm, order, host)
-        if not order.intel:
-            continue
-        facts.append(order.intel)
+    async with comm.shared_session(host) as session:
+        for order in orders:
+            await execute_order(comm, session, order, host, hide_output=True)
+            if order.failed:
+                break
+            if not order.intel:
+                continue
+            facts.append(order.intel)
 
     return facts
 
@@ -45,12 +50,12 @@ def handle_successful_order(order: Order, host: Machine):
         )
 
 
-def execute_order(comm: SSHCommunicator, order: Order, host: Machine, hide_output=False):
+async def execute_order(comm, session, order: Order, host: Machine, hide_output=False):
     order.silent = hide_output or order.silent
 
     logger.info(f'Executing order "{order.name}" on {host.ip}')
     try:
-        order = comm.execute_order(order, host)
+        order = await comm.execute_in_session(session, order)
     except Exception as exc:
         logger.error(f'Failed to execute order "{order.name}" on {host.ip}. Error: {exc}')
         order.outcome = OrderOutcome(code=-1, outputs=[], errors=str(exc))
@@ -64,41 +69,53 @@ def execute_order(comm: SSHCommunicator, order: Order, host: Machine, hide_outpu
     return order
 
 
-def execute_strategy_on_host(
+async def execute_strategy_on_host(
     comm: SSHCommunicator, strategy: Strategy, host: Machine, recon: bool = True
 ) -> StrategyOutcome:
     """Execute strategy on host"""
     outcome = StrategyOutcome()
-    if recon:
-        outcome.facts.update(get_host_facts(comm, strategy.recon, host))
+    async with comm.shared_session(host) as session:
+        if recon:
+            outcome.facts.update(await get_host_facts(comm, strategy.recon, host))
 
-    for order in strategy.orders:
-        if isinstance(order, Recon) and not recon:
-            continue
+        for order in strategy.orders:
+            if isinstance(order, Recon) and not recon:
+                continue
 
-        execute_order(comm, order, host)
-        outcome.orders.append(order)
+            await execute_order(comm, session, order, host)
+            outcome.orders.append(order)
 
-        if order.failed:
-            break
+            if order.failed:
+                break
 
-    logger.info(
-        "Finished executing strategy on {}@{}:{}. Outcomes:\nSuccess: {}\nError: {}\n",
-        host.ssh.username,
-        host.ip,
-        host.ssh.port,
-        len(strategy.successful_orders),
-        len(strategy.failed_orders),
-    )
+        logger.info(
+            "Finished executing strategy on {}@{}:{}. Outcomes:\nSuccess: {}\nError: {}\n",
+            host.ssh.username,
+            host.ip,
+            host.ssh.port,
+            len(strategy.successful_orders),
+            len(strategy.failed_orders),
+        )
 
     return outcome
+
+
+async def async_execute_strategy_on_fleet(
+    comm: SSHCommunicator, strategy: Strategy, fleet: Fleet, recon: bool = True
+) -> dict[Machine, StrategyOutcome]:
+    """Execute strategy on fleet"""
+    tasks = (execute_strategy_on_host(comm, strategy, host, recon) for host in fleet.machines)
+    results = await asyncio.gather(*tasks, return_exceptions=True)
+    for host, outcome in zip(fleet.machines, results):
+        strategy.outcome[host] = outcome
+
+    return strategy.outcome
 
 
 def execute_strategy_on_fleet(
     comm: SSHCommunicator, strategy: Strategy, fleet: Fleet, recon: bool = True
 ) -> dict[Machine, StrategyOutcome]:
     """Execute strategy on fleet"""
-    for host in fleet.machines:
-        strategy.outcome[host] = execute_strategy_on_host(comm, strategy, host, recon)
-
-    return strategy.outcome
+    loop = asyncio.get_event_loop()
+    results = loop.run_until_complete(async_execute_strategy_on_fleet(comm, strategy, fleet, recon))
+    return results

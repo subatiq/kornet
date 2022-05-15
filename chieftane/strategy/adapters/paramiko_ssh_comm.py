@@ -1,8 +1,8 @@
-from contextlib import contextmanager
-from typing import Iterator
+from contextlib import asynccontextmanager
+from typing import AsyncIterator
 
 import paramiko
-from pydantic import SecretStr
+from loguru import logger
 
 from chieftane.fleet.models import Machine
 from chieftane.strategy.adapters.abstract import SSHCommunicator
@@ -19,30 +19,24 @@ class ParamikoSSHCommunicator(SSHCommunicator):
 
         return OrderOutcome(code=exit_code, outputs=stdout_lines, errors="\n".join(stderr_lines))
 
-    @contextmanager
-    def _create_session(
-        self, host: str, port: int, user: str, password: SecretStr
-    ) -> Iterator[paramiko.SSHClient]:
+    @asynccontextmanager
+    async def shared_session(self, machine: Machine) -> AsyncIterator[paramiko.SSHClient]:
         session = paramiko.SSHClient()
         session.load_system_host_keys()
         session.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-        session.connect(host, port, user, password.get_secret_value())
+        try:
+            session.connect(
+                str(machine.ip),
+                port=machine.ssh.port,
+                username=machine.ssh.username,
+                password=machine.ssh.password.get_secret_value(),
+            )
+        except OSError as err:
+            logger.error(f"Failed to connect to {machine.ip}: {err}")
 
         yield session
         session.close()
 
-    def execute_order(self, order: Order, machine: Machine) -> Order:
-        with self._create_session(
-            str(machine.ip), machine.ssh.port, machine.ssh.username, machine.ssh.password
-        ) as session:
-            order.outcome = self._execute_command(session, order.command)
-            return order
-
-    def batch_execute_orders(self, orders: list[Order], machine: Machine) -> list[Order]:
-        with self._create_session(
-            str(machine.ip), machine.ssh.port, machine.ssh.username, machine.ssh.password
-        ) as session:
-            for order in orders:
-                order.outcome = self._execute_command(session, order.command)
-
-            return orders
+    async def execute_in_session(self, session: paramiko.SSHClient, order: Order) -> Order:
+        order.outcome = self._execute_command(session, order.command)
+        return order

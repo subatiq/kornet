@@ -1,14 +1,16 @@
 from abc import ABC, abstractmethod
+from contextlib import asynccontextmanager
+from typing import Any, AsyncIterator
 
 from chieftane.fleet.models import Machine
 from chieftane.strategy.orders.models import Order
 
 
 class SSHCommunicator(ABC):
-    @abstractmethod
-    def execute_order(self, order: Order, machine: Machine) -> Order:
+    @asynccontextmanager  # type: ignore
+    async def shared_session(self, machine: Machine) -> AsyncIterator[Any]:
         raise NotImplementedError
 
     @abstractmethod
-    def batch_execute_orders(self, orders: list[Order], machine: Machine) -> list[Order]:
+    async def execute_in_session(self, orders: list[Order], machine: Machine) -> list[Order]:
         raise NotImplementedError
