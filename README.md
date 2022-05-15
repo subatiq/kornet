@@ -32,12 +32,21 @@ groups:
 Strategy is a set of orders to execute via SSH. The format is pretty simple:
 
 ```yaml
+recon:
+- CPU
+- OS
+
+orders:
 - name: List all directories
   command: ls
 
 - name: Current path
   command: pwd
 ```
+
+`recon` field is responsible for specifing steps of gathering information about the target host.
+
+`orders` is a list of commands that need to be executed on the target host.
 
 ## Running strategy
 
