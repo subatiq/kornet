@@ -2,6 +2,7 @@ from typing import Any, Tuple
 
 from chieftane.fleet.models import Fleet, Machine
 from chieftane.fleet.raw.hosts_parser import parse_fleet_object
+from chieftane.strategy.adapters.asyncssh_comm import AsyncSSHCommunicator
 from chieftane.strategy.adapters.paramiko_ssh_comm import ParamikoSSHCommunicator
 from chieftane.strategy.models import Strategy, StrategyOutcome
 from chieftane.strategy.raw.strategy_parser import parse_strategy_object
@@ -17,4 +18,4 @@ def prepare_fleet(fleet_raw: dict[str, Any], group: str) -> Fleet:
 
 
 def execute_strategy(strategy: Strategy, fleet: Fleet) -> dict[Machine, StrategyOutcome]:
-    return execute_strategy_on_fleet(ParamikoSSHCommunicator(), strategy, fleet)
+    return execute_strategy_on_fleet(AsyncSSHCommunicator(), strategy, fleet)

@@ -16,7 +16,6 @@ def merge_ssh_configs(host_config: dict, group_config: dict) -> SSHProps:
 def parse_fleet_object(fleet: dict[str, Any], group: str) -> Fleet:
     hosts = fleet.get("hosts", [])
     groups = fleet.get("groups", {})
-
     for host in hosts:
         if group in host.get("groups", []):
             host["ssh"] = merge_ssh_configs(host.get("ssh", {}), groups[group].get("ssh", {}))

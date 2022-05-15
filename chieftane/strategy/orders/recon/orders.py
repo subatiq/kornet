@@ -4,7 +4,6 @@ from chieftane.strategy.orders.recon.handlers import cpu_parser, os_parser, ram_
 from chieftane.strategy.orders.recon.models import Recon
 
 _GET_OS = Recon(
-    alias="os",
     name="Get OS info",
     command="cat /etc/os-release",
     handler=os_parser,
