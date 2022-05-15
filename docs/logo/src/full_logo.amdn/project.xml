@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <Document serializeVersion="15">
-    <InterfaceSettings canvasscale="0.405532" canvasrect="-448.869,-791.629,3627.34,2187.25" canvasCenter="1364.8,301.997" />
+    <InterfaceSettings canvasscale="0.405532" canvasrect="-429.382,-798.033,3627.33,2187.25" canvasCenter="1384.29,295.592" />
     <Drawing snapgrid="0" gridback="1" sheetmovecontent="1" measurementunits="5" guidesvisible="1" guideslocked="0" scalestrokeandeffects="0" issheetdependentrulers="1" marginsenabled="0" margins="0,0,0,0" bleedsenabled="0" bleeds="0,0,0,0" colorformat="0" effectsPpi="150">
         <Sheets count="1" activesheet="0">
             <_0 name="Sheet 1" bound="0,0,2908.75,800" enabled="1" />
@@ -233,7 +233,7 @@
             </strokeprofiles>
         </swatches>
         <Grid size="100,100" subdivisionx="2" subdivisiony="2" color="0.5,0.5,0.5,0.5" visible="0" />
-        <Objects count="4" activelayer="1">
+        <Objects count="4" activelayer="3">
             <_0 class="Layer" GUID="{beb50005-151f-0641-8f47-7a8b66c87573}" name="Layer 1" visible="0" printable="1" locked="0" opacity="1" blendmode="0" unfolded="1" selectioncolor="0.19,0.55,1,1">
                 <Objects count="1">
                     <_0 class="PathShape" GUID="{c90b841d-075b-4a48-8c89-f4eb23947009}" name="Shape 14824" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="0" ctm="(1135.033530340512,0, 0,552.679733208432, 177.82907269641,97.29022216796881)" pivotPoint="0.5,0.5" d="M 0 5.55111512e-17 C 0 5.55111512e-17 1 5.55111512e-17 1 5.55111512e-17 C 1 5.55111512e-17 1 1 1 1 C 1 1 0 1 0 1 C 0 1 0 5.55111512e-17 0 5.55111512e-17 Z " autoclosed="0" handlesArray="F1 M 0 5.55111512e-17 L 0 5.55111512e-17 ">
@@ -267,7 +267,7 @@
                 </Objects>
             </_0>
             <_1 class="Layer" GUID="{8e73e0b0-08e1-8641-95b8-2bb6ed06eb68}" name="Layer 2" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="1" selectioncolor="1,0.5,0,1">
-                <Objects count="11">
+                <Objects count="12">
                     <_0 class="PathShape" GUID="{bcb4ee7e-5c6a-d242-a1a7-df2f177605de}" name="Path" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="0" ctm="(2108.288917132587,0, 0,799.9999521334004, 400.4583013984765,2.604729358423822e-05)" pivotPoint="0.5,0.5" d="M 2.77555756e-17 4.13590306e-25 C 2.77555756e-17 4.13590306e-25 1 4.13590306e-25 1 4.13590306e-25 C 1 4.13590306e-25 1 1 1 1 C 1 1 2.77555756e-17 1 2.77555756e-17 1 C 2.77555756e-17 1 2.77555756e-17 4.13590306e-25 2.77555756e-17 4.13590306e-25 Z " autoclosed="0" handlesArray="F1 M 2.77555756e-17 4.13590306e-25 L 2.77555756e-17 4.13590306e-25 ">
                         <drawers count="2">
                             <_0 class="0" name="Stroke" enabled="1" opacity="1" blendmode="0" fillmode="0" stroke="1" salign="0" smode="0">
@@ -284,7 +284,7 @@
                                 <brush angle="0.785398" roundness="0.333333" />
                             </_0>
                             <_1 class="1" name="Fill" enabled="1" opacity="1" blendmode="0" fillmode="0" winding="0">
-                                <solidfiller fill="0.110093,0,0.358625,1" />
+                                <solidfiller fill="0,0.0112561,0.0190102,1" />
                                 <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
                                     <gradient count="2">
                                         <_0 color="0,0,0,1" colorlocation="0" />
@@ -311,7 +311,7 @@
                                 <brush angle="0.785398" roundness="0.333333" />
                             </_0>
                             <_1 class="1" name="Fill" enabled="1" opacity="1" blendmode="0" fillmode="0" winding="0">
-                                <solidfiller fill="0.111669,0,0.358243,1" />
+                                <solidfiller fill="0,0.0112561,0.0190102,1" />
                                 <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
                                     <gradient count="2">
                                         <_0 color="0,0,0,1" colorlocation="0" />
@@ -338,7 +338,7 @@
                                 <brush angle="0.785398" roundness="0.333333" />
                             </_0>
                             <_1 class="1" name="Fill" enabled="1" opacity="1" blendmode="0" fillmode="0" winding="0">
-                                <solidfiller fill="0.111669,0,0.358243,1" />
+                                <solidfiller fill="0,0.0112561,0.0190102,1" />
                                 <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
                                     <gradient count="2">
                                         <_0 color="0,0,0,1" colorlocation="0" />
@@ -485,7 +485,7 @@
                             </_1>
                         </drawers>
                     </_8>
-                    <_9 class="Text" GUID="{cf705c67-b665-ed48-a8c4-10b00ae75f62}" name="Text" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="0" ctm="(2032.920199492646,0, 0,580.3433989985591, 736.892761230466,86.27756880028498)" pivotPoint="0.5,0.5" d="M -5.55111512e-17 -5.55111512e-17 C -5.55111512e-17 -5.55111512e-17 1 -5.55111512e-17 1 -5.55111512e-17 C 1 -5.55111512e-17 1 0.99999994 1 0.99999994 C 1 0.99999994 -5.55111512e-17 0.99999994 -5.55111512e-17 0.99999994 C -5.55111512e-17 0.99999994 -5.55111512e-17 -5.55111512e-17 -5.55111512e-17 -5.55111512e-17 Z " autoclosed="0" handlesArray="F1 M -5.55111512e-17 -5.55111512e-17 L -5.55111512e-17 -5.55111512e-17 " text="{\rtf1\ansi\ansicpg1251\cocoartf2638&#x0A;\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 FiraMono-Bold;}&#x0A;{\colortbl;\red255\green255\blue255;\red154\green42\blue254;}&#x0A;{\*\expandedcolortbl;;\cssrgb\c67654\c30835\c99831;}&#x0A;\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0&#x0A;&#x0A;\f0\b\fs740 \cf2 chieftane}" textlayout="0" drawglyphs="1">
+                    <_9 class="Text" GUID="{cf705c67-b665-ed48-a8c4-10b00ae75f62}" name="Text" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="0" ctm="(2032.920199492646,0, 0,580.3433989985591, 728.8927612304662,94.27756880028497)" pivotPoint="0.5,0.5" d="M -5.55111512e-17 -5.55111512e-17 C -5.55111512e-17 -5.55111512e-17 1 -5.55111512e-17 1 -5.55111512e-17 C 1 -5.55111512e-17 1 0.99999994 1 0.99999994 C 1 0.99999994 -5.55111512e-17 0.99999994 -5.55111512e-17 0.99999994 C -5.55111512e-17 0.99999994 -5.55111512e-17 -5.55111512e-17 -5.55111512e-17 -5.55111512e-17 Z " autoclosed="0" handlesArray="F1 M -5.55111512e-17 -5.55111512e-17 L -5.55111512e-17 -5.55111512e-17 " text="{\rtf1\ansi\ansicpg1251\cocoartf2638&#x0A;\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 FiraMono-Bold;}&#x0A;{\colortbl;\red255\green255\blue255;\red154\green42\blue254;}&#x0A;{\*\expandedcolortbl;;\cssrgb\c67654\c30835\c99831;}&#x0A;\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0&#x0A;&#x0A;\f0\b\fs740 \cf2 chieftane}" textlayout="0" drawglyphs="1">
                         <drawers count="2">
                             <_0 class="0" name="Stroke" enabled="0" opacity="1" blendmode="0" fillmode="0" stroke="1" salign="0" smode="0">
                                 <solidfiller fill="0,0,0,1" />
@@ -512,7 +512,7 @@
                             </_1>
                         </drawers>
                     </_9>
-                    <_10 class="Text" GUID="{455143f2-9942-aa42-b81b-04473f8ab8d3}" name="Text Copy" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="0" ctm="(2032.920199492646,0, 0,580.3433989985591, 736.892761230466,86.27756880028498)" pivotPoint="0.5,0.5" d="M -5.55111512e-17 -5.55111512e-17 C -5.55111512e-17 -5.55111512e-17 1 -5.55111512e-17 1 -5.55111512e-17 C 1 -5.55111512e-17 1 0.99999994 1 0.99999994 C 1 0.99999994 -5.55111512e-17 0.99999994 -5.55111512e-17 0.99999994 C -5.55111512e-17 0.99999994 -5.55111512e-17 -5.55111512e-17 -5.55111512e-17 -5.55111512e-17 Z " autoclosed="0" handlesArray="F1 M -5.55111512e-17 -5.55111512e-17 L -5.55111512e-17 -5.55111512e-17 " text="{\rtf1\ansi\ansicpg1251\cocoartf2638&#x0A;\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 FiraMono-Bold;}&#x0A;{\colortbl;\red255\green255\blue255;\red50\green208\blue255;}&#x0A;{\*\expandedcolortbl;;\cssrgb\c21477\c84852\c100000;}&#x0A;\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0&#x0A;&#x0A;\f0\b\fs740 \cf2 chieftane}" textlayout="0" drawglyphs="1">
+                    <_10 class="Text" GUID="{0ece4e85-1103-b44b-b507-18c0bfd56607}" name="Text Copy" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="0" ctm="(2032.920199492646,0, 0,580.3433989985591, 705.892761230466,82.27756880028497)" pivotPoint="0.5,0.5" d="M -5.55111512e-17 -5.55111512e-17 C -5.55111512e-17 -5.55111512e-17 1 -5.55111512e-17 1 -5.55111512e-17 C 1 -5.55111512e-17 1 0.99999994 1 0.99999994 C 1 0.99999994 -5.55111512e-17 0.99999994 -5.55111512e-17 0.99999994 C -5.55111512e-17 0.99999994 -5.55111512e-17 -5.55111512e-17 -5.55111512e-17 -5.55111512e-17 Z " autoclosed="0" handlesArray="F1 M -5.55111512e-17 -5.55111512e-17 L -5.55111512e-17 -5.55111512e-17 " text="{\rtf1\ansi\ansicpg1251\cocoartf2638&#x0A;\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 FiraMono-Bold;}&#x0A;{\colortbl;\red255\green255\blue255;\red154\green42\blue254;}&#x0A;{\*\expandedcolortbl;;\cssrgb\c67654\c30835\c99831;}&#x0A;\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0&#x0A;&#x0A;\f0\b\fs740 \cf2 chieftane}" textlayout="0" drawglyphs="1">
                         <drawers count="2">
                             <_0 class="0" name="Stroke" enabled="0" opacity="1" blendmode="0" fillmode="0" stroke="1" salign="0" smode="0">
                                 <solidfiller fill="0,0,0,1" />
@@ -539,6 +539,33 @@
                             </_1>
                         </drawers>
                     </_10>
+                    <_11 class="Text" GUID="{455143f2-9942-aa42-b81b-04473f8ab8d3}" name="Text Copy" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="0" ctm="(2032.920199492646,0, 0,580.3433989985591, 714.735534667966,86.27756880028498)" pivotPoint="0.5,0.5" d="M -5.55111512e-17 -5.55111512e-17 C -5.55111512e-17 -5.55111512e-17 1 -5.55111512e-17 1 -5.55111512e-17 C 1 -5.55111512e-17 1 0.99999994 1 0.99999994 C 1 0.99999994 -5.55111512e-17 0.99999994 -5.55111512e-17 0.99999994 C -5.55111512e-17 0.99999994 -5.55111512e-17 -5.55111512e-17 -5.55111512e-17 -5.55111512e-17 Z " autoclosed="0" handlesArray="F1 M -5.55111512e-17 -5.55111512e-17 L -5.55111512e-17 -5.55111512e-17 " text="{\rtf1\ansi\ansicpg1251\cocoartf2638&#x0A;\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 FiraMono-Bold;}&#x0A;{\colortbl;\red255\green255\blue255;\red50\green208\blue255;}&#x0A;{\*\expandedcolortbl;;\cssrgb\c21477\c84852\c100000;}&#x0A;\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0&#x0A;&#x0A;\f0\b\fs740 \cf2 chieftane}" textlayout="0" drawglyphs="1">
+                        <drawers count="2">
+                            <_0 class="0" name="Stroke" enabled="0" opacity="1" blendmode="0" fillmode="0" stroke="1" salign="0" smode="0">
+                                <solidfiller fill="0,0,0,1" />
+                                <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                    <gradient count="2">
+                                        <_0 color="0,0,0,1" colorlocation="0" />
+                                        <_1 color="1,0,0,1" colorlocation="1" />
+                                    </gradient>
+                                </gradientfiller>
+                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                                <style linecapstyle="0" linejoinstyle="0" flatness="0.1" miterlimit="10" linedashphase="0" />
+                                <arrows startarrowstyle="0" startarrowscale="1" endarrowstyle="0" endarrowscale="1" />
+                                <brush angle="0.785398" roundness="0.333333" />
+                            </_0>
+                            <_1 class="1" name="Fill" enabled="0" opacity="1" blendmode="0" fillmode="0" winding="0">
+                                <solidfiller fill="0.666667,0.666667,0.666667,1" />
+                                <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                    <gradient count="2">
+                                        <_0 color="0,0,0,1" colorlocation="0" />
+                                        <_1 color="1,0,0,1" colorlocation="1" />
+                                    </gradient>
+                                </gradientfiller>
+                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                            </_1>
+                        </drawers>
+                    </_11>
                 </Objects>
             </_1>
             <_2 class="Layer" GUID="{6c74934d-5de6-b34f-b185-b79d3494d781}" name="Layer 4" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="1" selectioncolor="0.32,0.32,0.89,1">
