@@ -3,7 +3,7 @@
     <InterfaceSettings canvasscale="0.405532" canvasrect="-397.325,-451.575,3627.33,2187.25" canvasCenter="1416.34,642.05" />
     <Drawing snapgrid="0" gridback="1" sheetmovecontent="1" measurementunits="5" guidesvisible="1" guideslocked="0" scalestrokeandeffects="0" issheetdependentrulers="1" marginsenabled="0" margins="0,0,0,0" bleedsenabled="0" bleeds="0,0,0,0" colorformat="0" effectsPpi="150">
         <Sheets count="1" activesheet="0">
-            <_0 name="Sheet 1" bound="0,0,2908.75,800" enabled="1" />
+            <_0 name="Sheet 1" bound="0,0,2091.17,800" enabled="1" />
         </Sheets>
         <swatches>
             <colorpalette count="22">
@@ -268,7 +268,7 @@
             </_0>
             <_1 class="Layer" GUID="{8e73e0b0-08e1-8641-95b8-2bb6ed06eb68}" name="Layer 2" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="1" selectioncolor="1,0.5,0,1">
                 <Objects count="13">
-                    <_0 class="PathShape" GUID="{e7b2d045-551d-2e4f-ab80-b344fd2bcf48}" name="Path" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="0" ctm="(800.0001965629313,0, 0,799.999984155124, 0.4582251702189046,2.234678441606515e-06)" pivotPoint="0.5,0.5" d="M 0.49999994 0 C 0.77614224 0 1 0.223857611 1 0.49999994 C 1 0.776142299 0.77614224 1 0.49999994 1 C 0.223857537 1 0 0.776142299 0 0.49999994 C 0 0.223857611 0.223857537 0 0.49999994 0 Z " autoclosed="0" handlesArray="F1 M 0.49999994 0 L 0.49999994 0 ">
+                    <_0 class="RectShape" GUID="{04012812-6070-2348-ab4c-c00323de1bf4}" name="Smart Rectangle" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="0" ctm="(790.158203125,0, 0,800, 0,0)" pivotPoint="0.5,0.5" chamferradius="188.547,188.547,188.547,188.547" chamfertype="0,0,0,0">
                         <drawers count="2">
                             <_0 class="0" name="Stroke" enabled="0" opacity="1" blendmode="0" fillmode="0" stroke="5" salign="0" smode="0">
                                 <solidfiller fill="0,0,0,1" />
