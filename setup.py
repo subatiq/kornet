@@ -16,7 +16,6 @@ setup(
     download_url="https://github.com/subatiq/kornet/archive/refs/tags/pre-0.0.15.tar.gz",
     keywords=["ssh", "automation", "orchestration"],
     install_requires=[
-        "paramiko",
         "asyncssh",
         "pydantic",
         "pyyaml",
