@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from kornet.strategy.orders.recon.handlers import cpu_parser, os_parser, ram_parser
+from kornet.strategy.orders.recon.handlers import cpu_parser, hostname_parser, os_parser, ram_parser
 from kornet.strategy.orders.recon.models import Recon
 
 _GET_OS = Recon(
@@ -16,3 +16,5 @@ _GET_CPU = Recon(
 )
 
 _GET_RAM = Recon(name="Get RAM info", command="free", handler=ram_parser)
+
+_GET_HOSTNAME = Recon(name="Get hostname", command="hostname", handler=hostname_parser)

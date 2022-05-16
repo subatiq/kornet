@@ -2,7 +2,7 @@ from ipaddress import IPv4Address
 from typing import Callable, Optional
 
 from kornet.shared.models import Model
-from kornet.strategy.machines.models import MachineFacts, MachineInfo
+from kornet.strategy.machines.models import MachineFacts
 from kornet.strategy.orders.models import Order, OrderOutcome
 from kornet.strategy.orders.recon.enum import ReconCatalog
 
@@ -16,10 +16,10 @@ class FleetInfo(Model):
 
 
 class Recon(Order):
-    handler: Callable[[OrderOutcome], MachineInfo]
+    handler: Callable[[OrderOutcome], MachineFacts]
 
     @property
-    def intel(self) -> Optional[MachineInfo]:
+    def intel(self) -> Optional[MachineFacts]:
         if not self.outcome or self.failed:
             return None
 

@@ -34,17 +34,10 @@ class Disk(Memory):
 
 
 class MachineFacts(Model):
+    hostname: Optional[str] = None
     cpu: Optional[Processor] = None
     ram: Optional[RAM] = None
     os: Optional[OS] = None
 
-    def append(self, info: MachineInfo) -> None:
-        if isinstance(info, Processor):
-            self.cpu = info
-        elif isinstance(info, RAM):
-            self.ram = info
-        elif isinstance(info, OS):
-            self.os = info
-
     def update(self, other: MachineFacts) -> None:
-        self.__dict__.update(other.__dict__)
+        self.__dict__.update(other.dict(exclude_unset=True))

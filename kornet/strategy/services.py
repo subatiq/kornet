@@ -29,9 +29,9 @@ async def get_host_facts(comm, orders: list[Recon], host: Machine) -> MachineFac
                 break
             if not order.intel:
                 continue
-            facts.append(order.intel)
+            facts.update(order.intel)
 
-    return facts
+    return deepcopy(facts)
 
 
 def handle_failed_order(order: Order, host: Machine):
@@ -84,7 +84,7 @@ async def execute_strategy_on_host(
         if not session:
             return deepcopy(outcome)
         if recon:
-            outcome.facts.update(await get_host_facts(comm, strategy.recon, host))
+            outcome.facts = await get_host_facts(comm, strategy.recon, host)
 
         for order in strategy.orders:
             if isinstance(order, Recon) and not recon:
