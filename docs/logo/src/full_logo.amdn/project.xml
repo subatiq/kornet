@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <Document serializeVersion="15">
-    <InterfaceSettings canvasscale="0.405532" canvasrect="-397.325,-451.575,3627.33,2187.25" canvasCenter="1416.34,642.05" />
+    <InterfaceSettings canvasscale="0.405532" canvasrect="-431.848,-796.8,3627.33,2187.25" canvasCenter="1381.82,296.825" />
     <Drawing snapgrid="0" gridback="1" sheetmovecontent="1" measurementunits="5" guidesvisible="1" guideslocked="0" scalestrokeandeffects="0" issheetdependentrulers="1" marginsenabled="0" margins="0,0,0,0" bleedsenabled="0" bleeds="0,0,0,0" colorformat="0" effectsPpi="150">
         <Sheets count="1" activesheet="0">
             <_0 name="Sheet 1" bound="0,0,2091.17,800" enabled="1" />
@@ -420,7 +420,7 @@
                                 <brush angle="0.785398" roundness="0.333333" />
                             </_0>
                             <_1 class="1" name="Fill" enabled="1" opacity="1" blendmode="0" fillmode="0" winding="0">
-                                <solidfiller fill="0.2167,0.846202,1,1" />
+                                <solidfiller fill="0.243137,0.662745,0.960784,1" />
                                 <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
                                     <gradient count="2">
                                         <_0 color="0,0,0,1" colorlocation="0" />
@@ -645,7 +645,7 @@
                                 <brush angle="0.785398" roundness="0.333333" />
                             </_0>
                             <_1 class="1" name="Fill" enabled="1" opacity="1" blendmode="0" fillmode="0" winding="0">
-                                <solidfiller fill="0.208295,0.848638,1,1" />
+                                <solidfiller fill="0.243137,0.662745,0.960784,1" />
                                 <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
                                     <gradient count="2">
                                         <_0 color="0,0,0,1" colorlocation="0" />
