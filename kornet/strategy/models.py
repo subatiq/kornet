@@ -1,10 +1,10 @@
 from __future__ import annotations
 
-from chieftane.fleet.models import Machine
-from chieftane.shared.models import Model
-from chieftane.strategy.machines.models import MachineFacts
-from chieftane.strategy.orders.models import Order
-from chieftane.strategy.orders.recon.models import Recon
+from kornet.fleet.models import Machine
+from kornet.shared.models import Model
+from kornet.strategy.machines.models import MachineFacts
+from kornet.strategy.orders.models import Order
+from kornet.strategy.orders.recon.models import Recon
 
 
 class StrategyOutcome(Model):

@@ -3,9 +3,9 @@ from typing import Any
 
 import yaml
 
-from chieftane.fleet.models import Fleet, Machine
-from chieftane.fleet.raw.models import Hosts
-from chieftane.shared.models import SSHProps
+from kornet.fleet.models import Fleet, Machine
+from kornet.fleet.raw.models import Hosts
+from kornet.shared.models import SSHProps
 
 
 def merge_ssh_configs(host_config: dict, group_config: dict) -> SSHProps:

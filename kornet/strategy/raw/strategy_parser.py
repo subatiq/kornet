@@ -4,8 +4,8 @@ from typing import Any
 import yaml
 from loguru import logger
 
-from chieftane.strategy.models import Strategy
-from chieftane.strategy.raw.models import RawStrategy
+from kornet.strategy.models import Strategy
+from kornet.strategy.raw.models import RawStrategy
 
 
 def parse_strategy_object(strategy: dict[str, list[dict[str, Any]]]) -> Strategy:

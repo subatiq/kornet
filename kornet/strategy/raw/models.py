@@ -2,11 +2,11 @@ from __future__ import annotations
 
 from typing import Union
 
-from chieftane.shared.models import Model
-from chieftane.strategy.models import Strategy
-from chieftane.strategy.orders.models import Order
-from chieftane.strategy.orders.recon.catalog import RECON_CATALOG
-from chieftane.strategy.orders.recon.models import Recon, ReconAlias
+from kornet.shared.models import Model
+from kornet.strategy.models import Strategy
+from kornet.strategy.orders.models import Order
+from kornet.strategy.orders.recon.catalog import RECON_CATALOG
+from kornet.strategy.orders.recon.models import Recon, ReconAlias
 
 
 class RawStrategy(Model):

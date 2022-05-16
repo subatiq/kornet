@@ -2,8 +2,8 @@ from abc import ABC, abstractmethod
 from contextlib import asynccontextmanager
 from typing import Any, AsyncIterator
 
-from chieftane.fleet.models import Machine
-from chieftane.strategy.orders.models import Order
+from kornet.fleet.models import Machine
+from kornet.strategy.orders.models import Order
 
 
 class SSHCommunicator(ABC):

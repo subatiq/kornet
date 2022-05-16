@@ -1,11 +1,11 @@
 from typing import Any
 
-from chieftane.fleet.models import Fleet, Machine
-from chieftane.fleet.raw.hosts_parser import parse_fleet_object
-from chieftane.strategy.adapters.asyncssh_comm import AsyncSSHCommunicator
-from chieftane.strategy.models import Strategy, StrategyOutcome
-from chieftane.strategy.raw.strategy_parser import parse_strategy_object
-from chieftane.strategy.services import execute_strategy_on_fleet
+from kornet.fleet.models import Fleet, Machine
+from kornet.fleet.raw.hosts_parser import parse_fleet_object
+from kornet.strategy.adapters.asyncssh_comm import AsyncSSHCommunicator
+from kornet.strategy.models import Strategy, StrategyOutcome
+from kornet.strategy.raw.strategy_parser import parse_strategy_object
+from kornet.strategy.services import execute_strategy_on_fleet
 
 
 def strategize(*, recon: list[dict[str, Any]] = [], orders: list[dict[str, Any]] = []) -> Strategy:

@@ -2,10 +2,10 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING
 
-from chieftane.strategy.machines.models import OS, RAM, Processor
+from kornet.strategy.machines.models import OS, RAM, Processor
 
 if TYPE_CHECKING:
-    from chieftane.strategy.orders.models import OrderOutcome
+    from kornet.strategy.orders.models import OrderOutcome
 
 
 def os_parser(outcome: OrderOutcome) -> OS:

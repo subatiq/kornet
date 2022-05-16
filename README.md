@@ -51,7 +51,7 @@ orders:
 ## Running strategy
 
 ```
-python3 -m chieftane <strategy_file.yml> <fleet_file.yml> <group>
+python3 -m kornet <strategy_file.yml> <fleet_file.yml> <group>
 ```
 
 **strategy file** - yaml strategy file described above

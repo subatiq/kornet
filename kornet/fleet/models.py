@@ -1,16 +1,24 @@
 from __future__ import annotations
 
+from enum import Enum
 from ipaddress import IPv4Address
 from typing import Any
 
-from chieftane.shared.models import Model, SSHProps
-from chieftane.strategy.machines.models import MachineFacts
+from kornet.shared.models import Model, SSHProps
+from kornet.strategy.machines.models import MachineFacts
+
+
+class MachineState(str, Enum):
+    OK = "OK"
+    UNREACHABLE = "UNREACHABLE"
+    FAILED = "FAILED"
 
 
 class Machine(Model):
     ip: IPv4Address
     ssh: SSHProps
     facts: MachineFacts = MachineFacts()
+    state: MachineState = MachineState.UNREACHABLE
 
     def __hash__(self) -> int:
         return hash(self.ssh.username + str(self.ip))

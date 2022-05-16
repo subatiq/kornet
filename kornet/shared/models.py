@@ -9,5 +9,5 @@ class Model(BaseModel):
 
 class SSHProps(Model):
     port: int = 22
-    username: str = 'root'
-    password: SecretStr = SecretStr('root')
+    username: str = "root"
+    password: SecretStr = SecretStr("root")

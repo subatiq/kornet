@@ -2,10 +2,11 @@ from contextlib import asynccontextmanager
 
 from asyncssh.client import SSHClient
 from asyncssh.connection import SSHClientConnection, create_connection
+from loguru import logger
 
-from chieftane.fleet.models import Machine
-from chieftane.strategy.adapters.abstract import SSHCommunicator
-from chieftane.strategy.orders.models import Order, OrderOutcome
+from kornet.fleet.models import Machine, MachineState
+from kornet.strategy.adapters.abstract import SSHCommunicator
+from kornet.strategy.orders.models import Order, OrderOutcome
 
 
 class AsyncSSHCommunicator(SSHCommunicator):
@@ -32,12 +33,20 @@ class AsyncSSHCommunicator(SSHCommunicator):
 
     @asynccontextmanager
     async def shared_session(self, machine: Machine):
-        conn, client = await create_connection(
-            SSHClient,
-            str(machine.ip),
-            port=machine.ssh.port,
-            username=machine.ssh.username,
-            password=machine.ssh.password.get_secret_value(),
-        )
-        yield conn
-        conn.close()
+        try:
+            conn, _ = await create_connection(
+                SSHClient,
+                str(machine.ip),
+                port=machine.ssh.port,
+                username=machine.ssh.username,
+                password=machine.ssh.password.get_secret_value(),
+                known_hosts=None,
+            )
+            machine.state = MachineState.OK
+            yield conn
+            conn.close()
+
+        except Exception as exc:
+            machine.state = MachineState.UNREACHABLE
+            logger.error(f"Failed to connect to {machine.ip}. Error: {exc}")
+            yield None

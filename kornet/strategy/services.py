@@ -6,20 +6,23 @@ Basic use cases implemented:
 """
 
 import asyncio
+from copy import deepcopy
 
 from loguru import logger
 
-from chieftane.fleet.models import Fleet, Machine
-from chieftane.strategy.adapters.abstract import SSHCommunicator
-from chieftane.strategy.machines.models import MachineFacts
-from chieftane.strategy.models import Strategy, StrategyOutcome
-from chieftane.strategy.orders.models import Order, OrderOutcome
-from chieftane.strategy.orders.recon.models import Recon
+from kornet.fleet.models import Fleet, Machine, MachineState
+from kornet.strategy.adapters.abstract import SSHCommunicator
+from kornet.strategy.machines.models import MachineFacts
+from kornet.strategy.models import Strategy, StrategyOutcome
+from kornet.strategy.orders.models import Order, OrderOutcome
+from kornet.strategy.orders.recon.models import Recon
 
 
 async def get_host_facts(comm, orders: list[Recon], host: Machine) -> MachineFacts:
     facts = MachineFacts()
     async with comm.shared_session(host) as session:
+        if not session:
+            return facts
         for order in orders:
             await execute_order(comm, session, order, host, hide_output=True)
             if order.failed:
@@ -36,6 +39,8 @@ def handle_failed_order(order: Order, host: Machine):
     if order.outcome:
         logger.error(f"{order.outcome.errors}")
 
+    host.state = MachineState.FAILED
+
 
 def handle_successful_order(order: Order, host: Machine):
     if isinstance(order, Recon) and order.intel:
@@ -48,6 +53,7 @@ def handle_successful_order(order: Order, host: Machine):
             order.outcome.code,
             order.outcome.yaml(),
         )
+    host.state = MachineState.OK
 
 
 async def execute_order(comm, session, order: Order, host: Machine, hide_output=False):
@@ -75,6 +81,8 @@ async def execute_strategy_on_host(
     """Execute strategy on host"""
     outcome = StrategyOutcome()
     async with comm.shared_session(host) as session:
+        if not session:
+            return deepcopy(outcome)
         if recon:
             outcome.facts.update(await get_host_facts(comm, strategy.recon, host))
 
@@ -97,7 +105,7 @@ async def execute_strategy_on_host(
             len(strategy.failed_orders),
         )
 
-    return outcome
+    return deepcopy(outcome)
 
 
 async def async_execute_strategy_on_fleet(

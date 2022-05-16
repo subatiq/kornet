@@ -1,7 +1,7 @@
 from __future__ import annotations
 
-from chieftane.strategy.orders.recon.handlers import cpu_parser, os_parser, ram_parser
-from chieftane.strategy.orders.recon.models import Recon
+from kornet.strategy.orders.recon.handlers import cpu_parser, os_parser, ram_parser
+from kornet.strategy.orders.recon.models import Recon
 
 _GET_OS = Recon(
     name="Get OS info",

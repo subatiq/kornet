@@ -4,9 +4,9 @@ from typing import AsyncIterator
 import paramiko
 from loguru import logger
 
-from chieftane.fleet.models import Machine
-from chieftane.strategy.adapters.abstract import SSHCommunicator
-from chieftane.strategy.orders.models import Order, OrderOutcome
+from kornet.fleet.models import Machine
+from kornet.strategy.adapters.abstract import SSHCommunicator
+from kornet.strategy.orders.models import Order, OrderOutcome
 
 
 class ParamikoSSHCommunicator(SSHCommunicator):

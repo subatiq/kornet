@@ -3,7 +3,7 @@ from pathlib import Path
 import typer
 import yaml
 
-from chieftane import execute_strategy, prepare_fleet, strategize
+from kornet import execute_strategy, prepare_fleet, strategize
 
 
 def main(strategy_filepath: Path, fleet_filepath: Path, group: str):

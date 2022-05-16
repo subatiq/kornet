@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Optional
 
-from chieftane.shared.models import Model
+from kornet.shared.models import Model
 
 
 class MachineInfo(Model):

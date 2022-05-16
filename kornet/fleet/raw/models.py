@@ -1,7 +1,7 @@
 from ipaddress import IPv4Address
 from typing import Any
 
-from chieftane.shared.models import Model, SSHProps
+from kornet.shared.models import Model, SSHProps
 
 
 class Host(Model):
