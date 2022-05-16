@@ -7,13 +7,13 @@ all_packages = find_packages()
 setup(
     name="kornet",
     packages=all_packages,
-    version="0.0.15",
+    version="0.0.18",
     license="MIT",
     description="A library for mass execution of ssh commands on remote machines fleet.",
     author="Vladimir Semenov",
     author_email="subatiq@gmail.com",
     url="https://github.com/subatiq/kornet",
-    download_url="https://github.com/subatiq/kornet/archive/refs/tags/pre-0.0.15.tar.gz",
+    download_url="https://github.com/subatiq/kornet/archive/refs/tags/0.0.18.tar.gz",
     keywords=["ssh", "automation", "orchestration"],
     install_requires=[
         "asyncssh",

@@ -40,4 +40,6 @@ class MachineFacts(Model):
     os: Optional[OS] = None
 
     def update(self, other: MachineFacts) -> None:
-        self.__dict__.update(other.dict(exclude_unset=True))
+        updated = self.dict()
+        updated.update(other.dict(exclude_unset=True, exclude_none=True))
+        self.__dict__.update(MachineFacts(**updated).__dict__)
