@@ -3,6 +3,8 @@
 ---
 A library for mass execution of ssh commands on remote machines fleet. 
 
+More docs: https://subatiq.github.io/kornet/
+
 ## Hosts file format
 
 You need to specify hosts and their groups. Groups so far can store only simple SSH configurations (username, password and port). Each host can override these values by specifying certain fields.
