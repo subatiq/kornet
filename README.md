@@ -1,5 +1,4 @@
-![Alt text](/docs/logo/full_logo_dark.png?raw=true#gh-dark-mode-only)
-![Alt text](/docs/logo/full_logo.png?raw=true#gh-light-mode-only)
+![](logo/full_logo.svg)
 
 ---
 A library for mass execution of ssh commands on remote machines fleet. 
