@@ -1,4 +1,4 @@
-![](logo/full_logo.svg)
+![](logo/full_logo.png)
 
 ---
 A library for mass execution of ssh commands on remote machines fleet. 
