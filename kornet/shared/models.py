@@ -3,8 +3,8 @@ from pydantic import BaseModel, SecretStr
 
 
 class Model(BaseModel):
-    def yaml(self) -> str:
-        return yaml.dump(self.dict())
+    def yaml(self, **kwargs) -> str:
+        return yaml.dump(self.dict(**kwargs))
 
 
 class SSHProps(Model):

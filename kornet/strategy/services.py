@@ -34,6 +34,10 @@ async def get_host_facts(comm, orders: list[Recon], host: Machine) -> MachineFac
     return deepcopy(facts)
 
 
+def recon(comm, orders: list[Recon], host: Machine) -> MachineFacts:
+    return asyncio.run(get_host_facts(comm, orders, host))
+
+
 def handle_failed_order(order: Order, host: Machine):
     logger.error(f'Failed to execute order "{order.name}" on {host.ip}')
     if order.outcome:
