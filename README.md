@@ -12,6 +12,46 @@ A library for mass execution of ssh commands on remote machines fleet.
 
 More docs: https://subatiq.github.io/kornet/
 
+## Installation
+
+```bash
+pip install kornet
+```
+
+## Usage examples
+
+### Run multiple commands
+
+```
+kornet run <strategy_file.yml> <fleet_file.yml> <group>
+```
+
+**strategy file** - yaml strategy file described above
+
+**fleet file** - yaml fleet file described above
+
+**group** - group to run the strategy on
+
+```bash
+$ kornet run strategy.yml fleet.yml office
+
+...
+Lots of output with results
+...
+```
+
+### Fast machine recon
+
+```bash
+$ kornet recon CPU user@192.168.0.2 --port 5022
+
+Results:
+cpu:
+  arch: x86_64
+  cores: 8
+  model: Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz
+```
+
 ## Hosts file format
 
 You need to specify hosts and their groups. Groups so far can store only simple SSH configurations (username, password and port). Each host can override these values by specifying certain fields.
@@ -56,15 +96,3 @@ orders:
 `recon` field is responsible for specifing steps of gathering information about the target host.
 
 `orders` is a list of commands that need to be executed on the target host.
-
-## Running strategy
-
-```
-python3 -m kornet <strategy_file.yml> <fleet_file.yml> <group>
-```
-
-**strategy file** - yaml strategy file described above
-
-**fleet file** - yaml fleet file described above
-
-**group** - group to run the strategy on
