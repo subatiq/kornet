@@ -1,3 +1,10 @@
+# flake8: noqa: E402
+import warnings
+
+from cryptography.utils import CryptographyDeprecationWarning
+
+warnings.filterwarnings("ignore", category=CryptographyDeprecationWarning)
+
 from typing import Any
 
 from kornet.fleet.models import Fleet, Machine
