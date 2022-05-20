@@ -1,7 +1,16 @@
-![](logo/full_logo.svg)
+![](docs/logo/full_logo.svg)
+
+<p align="center">
+  <img src="https://img.shields.io/badge/python-3.9+-blue.svg" alt="Python Version">
+  <img alt="GitHub release (latest by date including pre-releases)" src="https://img.shields.io/github/v/release/subatiq/kornet?include_prereleases">
+  <img src="https://img.shields.io/github/license/subatiq/kornet.svg" alt="License">
+  <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
+</p>
 
 ---
 A library for mass execution of ssh commands on remote machines fleet. 
+
+More docs: https://subatiq.github.io/kornet/
 
 ## Hosts file format
 
